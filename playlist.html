@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playlist | YouTube Clone</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+    <link rel="stylesheet" href="assets/css/playlist.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+</head>
+
+<body class="sidebar-hidden">
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                <div class="nav-section nav-left">
+                    <button class="nav-button menu-button">
+                        <i class="uil uil-bars"></i>
+                    </button>
+                    <a href="#" class="nav-logo">
+                        <img src="images/logo.svg" alt="Logo" class="logo-image" />
+                        <h2 class="logo-text">YouTube</h2>
+                    </a>
+                </div>
+
+                <div class="nav-section">
+                    <button class="nav-button search-back-button" id="search-back-button">
+                        <i class="uil uil-arrow-left"></i>
+                    </button>
+                </div>
+
+                <div class="nav-section nav-center">
+                    <form action="#" class="search-form">
+                        <input type="search" placeholder="Search" class="search-input" required />
+                        <button class="nav-button search-button">
+                            <i class="uil uil-search"></i>
+                        </button>
+                    </form>
+                    <button class="nav-button mic-button">
+                        <i class="uil uil-microphone"></i>
+                    </button>
+                </div>
+
+                <div class="nav-section nav-right">
+                    <button class="nav-button search-button" id="search-button">
+                        <i class="uil uil-search"></i>
+                    </button>
+                    <button class="nav-button theme-button">
+                        <i class="uil uil-moon"></i>
+                    </button>
+                    <img src="images/user.jpg" alt="User Image" class="user-image" />
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main Layout -->
+        <main class="main-layout">
+            <div class="screen-overlay"></div>
+
+            <!-- Mini Sidebar -->
+            <aside class="sidebar">
+                <div class="nav-section nav-left">
+                    <button class="nav-button menu-button">
+                        <i class="uil uil-bars"></i>
+                    </button>
+                    <a href="#" class="nav-logo">
+                        <img src="images/logo.svg" alt="Logo" class="logo-image" />
+                        <h2 class="logo-text">YouTube</h2>
+                    </a>
+                </div>
+
+                <div class="links-container">
+                    <div class="link-section">
+                        <a href="#" class="link-item" title="Home">
+                            <i class="uil uil-estate"></i>
+                            <span class="link-text">Home</span>
+                        </a>
+                        <a href="#" class="link-item" title="Shorts">
+                            <i class="uil uil-video"></i>
+                            <span class="link-text">Shorts</span>
+                        </a>
+                        <a href="#" class="link-item" title="Subscriptions">
+                            <i class="uil uil-tv-retro"></i>
+                            <span class="link-text">Subscriptions</span>
+                        </a>
+                    </div>
+                    <div class="section-separator"></div>
+
+                    <div class="link-section">
+                        <h4 class="section-title">You</h4>
+                        <a href="#" class="link-item" title="Your channel">
+                            <i class="uil uil-user-square"></i>
+                            <span class="link-text">Your channel</span>
+                        </a>
+                        <a href="#" class="link-item" title="History">
+                            <i class="uil uil-history"></i>
+                            <span class="link-text">History</span>
+                        </a>
+                        <a href="#" class="link-item" title="Watch later">
+                            <i class="uil uil-clock"></i>
+                            <span class="link-text">Watch later</span>
+                        </a>
+                    </div>
+                    <div class="section-separator"></div>
+
+                    <div class="link-section">
+                        <h4 class="section-title">Explore</h4>
+                        <a href="#" class="link-item" title="Trending">
+                            <i class="uil uil-fire"></i>
+                            <span class="link-text">Trending</span>
+                        </a>
+                        <a href="#" class="link-item" title="Music">
+                            <i class="uil uil-music"></i>
+                            <span class="link-text">Music</span>
+                        </a>
+                        <a href="#" class="link-item" title="Gaming">
+                            <i class="uil uil-basketball"></i>
+                            <span class="link-text">Gaming</span>
+                        </a>
+                        <a href="#" class="link-item" title="Sports">
+                            <i class="uil uil-trophy"></i>
+                            <span class="link-text">Sports</span>
+                        </a>
+                    </div>
+                    <div class="section-separator"></div>
+
+                    <div class="link-section">
+                        <h4 class="section-title">More from YouTube</h4>
+                        <a href="#" class="link-item" title="YouTube Plus">
+                            <i class="uil uil-shield-plus"></i>
+                            <span class="link-text">YouTube Plus</span>
+                        </a>
+                        <a href="#" class="link-item" title="YouTube Music">
+                            <i class="uil uil-headphones-alt"></i>
+                            <span class="link-text">YouTube Music</span>
+                        </a>
+                        <a href="#" class="link-item" title="YouTube Kids">
+                            <i class="uil uil-airplay"></i>
+                            <span class="link-text">YouTube Kids</span>
+                        </a>
+                    </div>
+                    <div class="section-separator"></div>
+
+                    <div class="link-section">
+                        <a href="#" class="link-item" title="Settings">
+                            <i class="uil uil-setting"></i>
+                            <span class="link-text">Settings</span>
+                        </a>
+                        <a href="#" class="link-item" title="Report">
+                            <i class="uil uil-file-medical-alt"></i>
+                            <span class="link-text">Report</span>
+                        </a>
+                        <a href="#" class="link-item" title="Help">
+                            <i class="uil uil-question-circle"></i>
+                            <span class="link-text">Help</span>
+                        </a>
+                        <a href="#" class="link-item" title="Feedback">
+                            <i class="uil uil-exclamation-triangle"></i>
+                            <span class="link-text">Feedback</span>
+                        </a>
+                    </div>
+                </div>
+            </aside>
+
+            <div class="content-wrapper">
+                <div class="left-side">
+                    <!-- Playlist Header Section -->
+                    <section class="playlist-header">
+                        <div class="playlist-thumbnail">
+                            <!-- <img src="https://i.ytimg.com/vi/CB3pEMl9TOA/maxresdefault.jpg" alt="Playlist Thumbnail"
+                                class="thumbnail" /> -->
+                            <img src="images/banner.jpg" alt="Playlist Thumbnail" class="thumbnail" />
+                        </div>
+                        <div class="playlist-info">
+                            <div class="playlist-title-container">
+                                <h1 class="playlist-title">STRAPI TUTORIALS IN HINDI</h1>
+                                <span class="playlist-language">IN HINDI</span>
+                            </div>
+
+                            <div class="playlist-meta">
+                                <div class="playlist-stats">
+                                    <span><a href="" class="channel-name">CodeWithHarry</a></span>
+                                    <span class="separator">-</span>
+                                    <span class="playlist-type">Course</span>
+                                    <span class="separator">•</span>
+                                    <span class="video-count">10 videos</span>
+                                    <span class="separator">•</span>
+                                    <span class="last-updated">Last updated on May 22, 2022</span>
+                                </div>
+                            </div>
+
+                            <div class="playlist-actions">
+                                <button class="playlist-button play-all">
+                                    <i class="uil uil-play"></i> Play
+                                </button>
+                                <button class="playlist-button">
+                                    <i class="uil uil-share"></i> Share
+                                </button>
+                                <div class="video-options">
+                                    <button class="options-toggle">
+                                        <i class="uil uil-ellipsis-v"></i>
+                                    </button>
+                                    <ul class="options-menu">
+                                        <li><i class="uil uil-bookmark"></i> Save to Library</li>
+                                        <li><i class="uil uil-import"></i> Download All</li>
+                                        <li><i class="uil uil-share-alt"></i> Share</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="playlist-description truncate-lg">
+                                <p>
+                                    Complete Strapi Course by Code With Harry in Hindi - Learn
+                                    Strapi from scratch for free!
+                                </p>
+                                <p>
+                                    Strapi is an open-source headless CMS used for building fast
+                                    and easily manageable APIs written in JavaScript. It enables
+                                    developers to make flexible API structures easily using a
+                                    beautiful user interface.
+                                </p>
+                                <p>
+                                    In this course, we will cover every topic of Strapi so that
+                                    we can build engaging websites. This course is entirely
+                                    free, and any resource/code/etc I write or create is
+                                    absolutely free to access!
+                                </p>
+                                <p>
+                                    This course is in the Hindi language for you to understand
+                                    each and some content about.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="backdrop" id="backdrop"></div>
+
+                <div class="modal" id="playlistDesc" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+                    <div class="modal-header">
+                        <div>
+                            <h2 id="modalTitle">STRAPI TUTORIALS IN HINDI</h2>
+                        </div>
+                        <button class="close-btn" id="closeBtn" aria-label="Close modal">&times;</button>
+                    </div>
+                    <div class="modal-content">
+
+                        <div class="modal-section">
+                            <h3>Description</h3>
+                            <p class="">
+                                Complete Strapi Course by Code With Harry in Hindi - Learn
+                                Strapi from scratch for free!
+                            </p>
+                            <p>
+                                Strapi is an open-source headless CMS used for building fast
+                                and easily manageable APIs written in JavaScript. It enables
+                                developers to make flexible API structures easily using a
+                                beautiful user interface.
+                            </p>
+                            <p>
+                                In this course, we will cover every topic of Strapi so that
+                                we can build engaging websites. This course is entirely
+                                free, and any resource/code/etc I write or create is
+                                absolutely free to access!
+                            </p>
+                            <p>
+                                This course is in the Hindi language for you to understand
+                                each and some content about.
+                            </p>
+                        </div>
+                        <div class="modal-section">
+                            <h3>More Info</h3>
+                            <ul class="stats-list">
+                                <li>📅 Last Updated: Dec 25, 2018</li>
+                                <li>📅 Created: Dec 25, 2018</li>
+                                <li>🎥 172 videos</li>
+                                <li>👁️ 86,509,035 views</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-buttons">
+                        <button class="share-btn">Share Playlist</button>
+                        <button class="report-btn">Report Playlist</button>
+                    </div>
+                </div>
+
+
+                <div class="right-side">
+                    <!-- Playlist Videos Section -->
+                    <section class="playlist-videos">
+                        <div class="video-list">
+                            <!-- Video 1 -->
+                            <div class="video-card playlist-video">
+                                <div class="thumbnail-container">
+                                    <a href="watch.html">
+                                        <img src="images/banner.jpg" alt="Video Thumbnail" class="thumbnail" />
+                                    </a>
+                                    <p class="duration">10:30</p>
+                                </div>
+                                <div class="video-info">
+                                    <div class="video-details">
+                                        <a href="watch.html" class="title">Introduction to Strapi | Strapi Tutorial
+                                            #1</a>
+                                        <div>
+                                            <a href="channel.html" class="channel-name">CodeWithHarry</a>
+                                            <p class="views"> • 237K views • 3 years ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="video-options">
+                                        <button class="options-toggle">
+                                            <i class="uil uil-ellipsis-v"></i>
+                                        </button>
+                                        <ul class="options-menu">
+                                            <li><i class="uil uil-clock"></i> Add to queue</li>
+                                            <li>
+                                                <i class="uil uil-bookmark"></i> Save to Watch Later
+                                            </li>
+                                            <li>
+                                                <i class="uil uil-folder-plus"></i> Save to a Playlist
+                                            </li>
+                                            <li><i class="uil uil-import"></i> Download</li>
+                                            <li><i class="uil uil-share-alt"></i> Share</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Video 2 -->
+                            <div class="video-card playlist-video">
+                                <div class="thumbnail-container">
+                                    <a href="watch.html">
+                                        <img src="images/banner.jpg" alt="Video Thumbnail" class="thumbnail" />
+                                    </a>
+                                    <p class="duration">15:45</p>
+                                </div>
+                                <div class="video-info">
+                                    <div class="video-details">
+                                        <a href="watch.html" class="title">Installing PostgreSQL & Connecting to Strapi
+                                            | Strapi
+                                            Tutorial #2</a>
+                                        <div>
+                                            <a href="channel.html" class="channel-name">CodeWithHarry</a>
+                                            <p class="views"> • 70K views • 3 years ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="video-options">
+                                        <button class="options-toggle">
+                                            <i class="uil uil-ellipsis-v"></i>
+                                        </button>
+                                        <ul class="options-menu">
+                                            <li><i class="uil uil-clock"></i> Add to queue</li>
+                                            <li>
+                                                <i class="uil uil-bookmark"></i> Save to Watch Later
+                                            </li>
+                                            <li>
+                                                <i class="uil uil-folder-plus"></i> Save to a Playlist
+                                            </li>
+                                            <li><i class="uil uil-import"></i> Download</li>
+                                            <li><i class="uil uil-share-alt"></i> Share</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Video 3 -->
+                            <div class="video-card playlist-video">
+                                <div class="thumbnail-container">
+                                    <a href="watch.html">
+                                        <img src="images/banner.jpg" alt="Video Thumbnail" class="thumbnail" />
+                                    </a>
+                                    <p class="duration">22:18</p>
+                                </div>
+                                <div class="video-info">
+                                    <div class="video-details">
+                                        <a href="watch.html" class="title">Project: Creating Ecommerce application with
+                                            strapi | Strapi TutorialProject: Creating Ecommerce application with
+                                            strapi | Strapi Tutorial...</a>
+                                        <div>
+                                            <a href="channel.html" class="channel-name">CodeWithHarry</a>
+                                            <p class="views"> • 54K views • 3 years ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="video-options">
+                                        <button class="options-toggle">
+                                            <i class="uil uil-ellipsis-v"></i>
+                                        </button>
+                                        <ul class="options-menu">
+                                            <li><i class="uil uil-clock"></i> Add to queue</li>
+                                            <li>
+                                                <i class="uil uil-bookmark"></i> Save to Watch Later
+                                            </li>
+                                            <li>
+                                                <i class="uil uil-folder-plus"></i> Save to a Playlist
+                                            </li>
+                                            <li><i class="uil uil-import"></i> Download</li>
+                                            <li><i class="uil uil-share-alt"></i> Share</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Video 4 -->
+                            <div class="video-card playlist-video">
+                                <div class="thumbnail-container">
+                                    <a href="watch.html">
+                                        <img src="images/banner.jpg" alt="Video Thumbnail" class="thumbnail" />
+                                    </a>
+                                    <p class="duration">18:32</p>
+                                </div>
+                                <div class="video-info">
+                                    <div class="video-details">
+                                        <a href="watch.html" class="title">Deploying our Strapi app to Digital ocean |
+                                            Strapi
+                                            Tutorial #10</a>
+                                        <div>
+                                            <a href="channel.html" class="channel-name">CodeWithHarry</a>
+                                            <p class="views"> • 35K views • 3 years ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="video-options">
+                                        <button class="options-toggle">
+                                            <i class="uil uil-ellipsis-v"></i>
+                                        </button>
+                                        <ul class="options-menu">
+                                            <li><i class="uil uil-clock"></i> Add to queue</li>
+                                            <li>
+                                                <i class="uil uil-bookmark"></i> Save to Watch Later
+                                            </li>
+                                            <li>
+                                                <i class="uil uil-folder-plus"></i> Save to a Playlist
+                                            </li>
+                                            <li><i class="uil uil-import"></i> Download</li>
+                                            <li><i class="uil uil-share-alt"></i> Share</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Video 1 -->
+                            <div class="video-card playlist-video">
+                                <div class="thumbnail-container">
+                                    <a href="watch.html">
+                                        <img src="images/banner.jpg" alt="Video Thumbnail" class="thumbnail" />
+                                    </a>
+                                    <p class="duration">10:30</p>
+                                </div>
+                                <div class="video-info">
+                                    <div class="video-details">
+                                        <a href="watch.html" class="title">Introduction to Strapi | Strapi Tutorial
+                                            #1</a>
+                                        <div>
+                                            <a href="channel.html" class="channel-name">CodeWithHarry</a>
+                                            <p class="views"> • 237K views • 3 years ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="video-options">
+                                        <button class="options-toggle">
+                                            <i class="uil uil-ellipsis-v"></i>
+                                        </button>
+                                        <ul class="options-menu">
+                                            <li><i class="uil uil-clock"></i> Add to queue</li>
+                                            <li>
+                                                <i class="uil uil-bookmark"></i> Save to Watch Later
+                                            </li>
+                                            <li>
+                                                <i class="uil uil-folder-plus"></i> Save to a Playlist
+                                            </li>
+                                            <li><i class="uil uil-import"></i> Download</li>
+                                            <li><i class="uil uil-share-alt"></i> Share</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Video 2 -->
+                            <div class="video-card playlist-video">
+                                <div class="thumbnail-container">
+                                    <a href="watch.html">
+                                        <img src="images/banner.jpg" alt="Video Thumbnail" class="thumbnail" />
+                                    </a>
+                                    <p class="duration">15:45</p>
+                                </div>
+                                <div class="video-info">
+                                    <div class="video-details">
+                                        <a href="watch.html" class="title">Installing PostgreSQL & Connecting to Strapi
+                                            | Strapi
+                                            Tutorial #2</a>
+                                        <div>
+                                            <a href="channel.html" class="channel-name">CodeWithHarry</a>
+                                            <p class="views"> • 70K views • 3 years ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="video-options">
+                                        <button class="options-toggle">
+                                            <i class="uil uil-ellipsis-v"></i>
+                                        </button>
+                                        <ul class="options-menu">
+                                            <li><i class="uil uil-clock"></i> Add to queue</li>
+                                            <li>
+                                                <i class="uil uil-bookmark"></i> Save to Watch Later
+                                            </li>
+                                            <li>
+                                                <i class="uil uil-folder-plus"></i> Save to a Playlist
+                                            </li>
+                                            <li><i class="uil uil-import"></i> Download</li>
+                                            <li><i class="uil uil-share-alt"></i> Share</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Video 3 -->
+                            <div class="video-card playlist-video">
+                                <div class="thumbnail-container">
+                                    <a href="watch.html">
+                                        <img src="images/banner.jpg" alt="Video Thumbnail" class="thumbnail" />
+                                    </a>
+                                    <p class="duration">22:18</p>
+                                </div>
+                                <div class="video-info">
+                                    <div class="video-details">
+                                        <a href="watch.html" class="title">Project: Creating Ecommerce application with
+                                            strapi | Strapi TutorialProject: Creating Ecommerce application with
+                                            strapi | Strapi Tutorial...</a>
+                                        <div>
+                                            <a href="channel.html" class="channel-name">CodeWithHarry</a>
+                                            <p class="views"> • 54K views • 3 years ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="video-options">
+                                        <button class="options-toggle">
+                                            <i class="uil uil-ellipsis-v"></i>
+                                        </button>
+                                        <ul class="options-menu">
+                                            <li><i class="uil uil-clock"></i> Add to queue</li>
+                                            <li>
+                                                <i class="uil uil-bookmark"></i> Save to Watch Later
+                                            </li>
+                                            <li>
+                                                <i class="uil uil-folder-plus"></i> Save to a Playlist
+                                            </li>
+                                            <li><i class="uil uil-import"></i> Download</li>
+                                            <li><i class="uil uil-share-alt"></i> Share</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Video 4 -->
+                            <div class="video-card playlist-video">
+                                <div class="thumbnail-container">
+                                    <a href="watch.html">
+                                        <img src="images/banner.jpg" alt="Video Thumbnail" class="thumbnail" />
+                                    </a>
+                                    <p class="duration">18:32</p>
+                                </div>
+                                <div class="video-info">
+                                    <div class="video-details">
+                                        <a href="watch.html" class="title">Deploying our Strapi app to Digital ocean |
+                                            Strapi
+                                            Tutorial #10</a>
+                                        <div>
+                                            <a href="channel.html" class="channel-name">CodeWithHarry</a>
+                                            <p class="views"> • 35K views • 3 years ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="video-options">
+                                        <button class="options-toggle">
+                                            <i class="uil uil-ellipsis-v"></i>
+                                        </button>
+                                        <ul class="options-menu">
+                                            <li><i class="uil uil-clock"></i> Add to queue</li>
+                                            <li>
+                                                <i class="uil uil-bookmark"></i> Save to Watch Later
+                                            </li>
+                                            <li>
+                                                <i class="uil uil-folder-plus"></i> Save to a Playlist
+                                            </li>
+                                            <li><i class="uil uil-import"></i> Download</li>
+                                            <li><i class="uil uil-share-alt"></i> Share</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="section-separator"></div>
+                    </section>
+
+                    <!-- Recommended Playlists Section -->
+                    <section class="recommended-playlists">
+                        <h2 class="section-title">Recommended playlists</h2>
+
+                        <div class="playlists-grid">
+                            <div class="playlist-card">
+                                <div class="playlist-thumbnail">
+                                    <img src="https://i.ytimg.com/vi/BI2QfuAhrCk/hqdefault.jpg" alt="Playlist 1"
+                                        class="thumbnail">
+                                    <div class="overlay">
+                                        <i class="uil uil-play"></i>
+                                        <span class="count">10 videos</span>
+                                    </div>
+                                </div>
+                                <div class="playlist-info">
+                                    <div class="info-header">
+                                        <div class="text-info">
+                                            <h3 class="playlist-title">World’s Billionaire Secrets</h3>
+                                            <a href="playlist.html" class="view-playlist">View Playlist</a>
+                                        </div>
+                                        <div class="video-options">
+                                            <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                                            <ul class="options-menu">
+                                                <li><i class="uil uil-clock"></i> Add to queue</li>
+                                                <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                                                <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                                                <li><i class="uil uil-import"></i> Download</li>
+                                                <li><i class="uil uil-share-alt"></i> Share</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="playlist-card">
+                                <div class="playlist-thumbnail">
+                                    <img src="https://i.ytimg.com/vi/HFGdv8hIRnQ/hqdefault.jpg" alt="Playlist 2"
+                                        class="thumbnail">
+                                    <div class="overlay">
+                                        <i class="uil uil-play"></i>
+                                        <span class="count">8 videos</span>
+                                    </div>
+                                </div>
+                                <div class="playlist-info">
+                                    <div class="info-header">
+                                        <div class="text-info">
+                                            <h3 class="playlist-title">Ancient Civilizations Exposed</h3>
+                                            <a href="playlist.html" class="view-playlist">View Playlist</a>
+                                        </div>
+                                        <div class="video-options">
+                                            <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                                            <ul class="options-menu">
+                                                <li><i class="uil uil-clock"></i> Add to queue</li>
+                                                <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                                                <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                                                <li><i class="uil uil-import"></i> Download</li>
+                                                <li><i class="uil uil-share-alt"></i> Share</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="playlist-card">
+                                <div class="playlist-thumbnail">
+                                    <img src="https://i.ytimg.com/vi/SBhCHPnWkpI/hqdefault.jpg" alt="Playlist 3"
+                                        class="thumbnail">
+                                    <div class="overlay">
+                                        <i class="uil uil-play"></i>
+                                        <span class="count">15 videos</span>
+                                    </div>
+                                </div>
+                                <div class="playlist-info">
+                                    <div class="info-header">
+                                        <div class="text-info">
+                                            <h3 class="playlist-title">Science And Wonders</h3>
+                                            <a href="playlist.html" class="view-playlist">View Playlist</a>
+                                        </div>
+                                        <div class="video-options">
+                                            <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                                            <ul class="options-menu">
+                                                <li><i class="uil uil-clock"></i> Add to queue</li>
+                                                <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                                                <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                                                <li><i class="uil uil-import"></i> Download</li>
+                                                <li><i class="uil uil-share-alt"></i> Share</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="playlist-card">
+                                <div class="playlist-thumbnail">
+                                    <img src="https://i.ytimg.com/vi/7eAPaQ9ganU/hqdefault.jpg" alt="Playlist 4"
+                                        class="thumbnail">
+                                    <div class="overlay">
+                                        <i class="uil uil-play"></i>
+                                        <span class="count">12 videos</span>
+                                    </div>
+                                </div>
+                                <div class="playlist-info">
+                                    <div class="info-header">
+                                        <div class="text-info">
+                                            <h3 class="playlist-title">Mystery &amp; Theories</h3>
+                                            <a href="playlist.html" class="view-playlist">View Playlist</a>
+                                        </div>
+                                        <div class="video-options">
+                                            <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                                            <ul class="options-menu">
+                                                <li><i class="uil uil-clock"></i> Add to queue</li>
+                                                <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                                                <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                                                <li><i class="uil uil-import"></i> Download</li>
+                                                <li><i class="uil uil-share-alt"></i> Share</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="playlist-card">
+                                <div class="playlist-thumbnail">
+                                    <img src="https://i.ytimg.com/vi/BI2QfuAhrCk/hqdefault.jpg" alt="Playlist 1"
+                                        class="thumbnail">
+                                    <div class="overlay">
+                                        <i class="uil uil-play"></i>
+                                        <span class="count">10 videos</span>
+                                    </div>
+                                </div>
+                                <div class="playlist-info">
+                                    <div class="info-header">
+                                        <div class="text-info">
+                                            <h3 class="playlist-title">World’s Billionaire Secrets</h3>
+                                            <a href="playlist.html" class="view-playlist">View Playlist</a>
+                                        </div>
+                                        <div class="video-options">
+                                            <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                                            <ul class="options-menu">
+                                                <li><i class="uil uil-clock"></i> Add to queue</li>
+                                                <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                                                <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                                                <li><i class="uil uil-import"></i> Download</li>
+                                                <li><i class="uil uil-share-alt"></i> Share</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="playlist-card">
+                                <div class="playlist-thumbnail">
+                                    <img src="https://i.ytimg.com/vi/HFGdv8hIRnQ/hqdefault.jpg" alt="Playlist 2"
+                                        class="thumbnail">
+                                    <div class="overlay">
+                                        <i class="uil uil-play"></i>
+                                        <span class="count">8 videos</span>
+                                    </div>
+                                </div>
+                                <div class="playlist-info">
+                                    <div class="info-header">
+                                        <div class="text-info">
+                                            <h3 class="playlist-title">Ancient Civilizations Exposed</h3>
+                                            <a href="playlist.html" class="view-playlist">View Playlist</a>
+                                        </div>
+                                        <div class="video-options">
+                                            <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                                            <ul class="options-menu">
+                                                <li><i class="uil uil-clock"></i> Add to queue</li>
+                                                <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                                                <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                                                <li><i class="uil uil-import"></i> Download</li>
+                                                <li><i class="uil uil-share-alt"></i> Share</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="playlist-card">
+                                <div class="playlist-thumbnail">
+                                    <img src="https://i.ytimg.com/vi/SBhCHPnWkpI/hqdefault.jpg" alt="Playlist 3"
+                                        class="thumbnail">
+                                    <div class="overlay">
+                                        <i class="uil uil-play"></i>
+                                        <span class="count">15 videos</span>
+                                    </div>
+                                </div>
+                                <div class="playlist-info">
+                                    <div class="info-header">
+                                        <div class="text-info">
+                                            <h3 class="playlist-title">Science And Wonders</h3>
+                                            <a href="playlist.html" class="view-playlist">View Playlist</a>
+                                        </div>
+                                        <div class="video-options">
+                                            <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                                            <ul class="options-menu">
+                                                <li><i class="uil uil-clock"></i> Add to queue</li>
+                                                <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                                                <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                                                <li><i class="uil uil-import"></i> Download</li>
+                                                <li><i class="uil uil-share-alt"></i> Share</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="playlist-card">
+                                <div class="playlist-thumbnail">
+                                    <img src="https://i.ytimg.com/vi/7eAPaQ9ganU/hqdefault.jpg" alt="Playlist 4"
+                                        class="thumbnail">
+                                    <div class="overlay">
+                                        <i class="uil uil-play"></i>
+                                        <span class="count">12 videos</span>
+                                    </div>
+                                </div>
+                                <div class="playlist-info">
+                                    <div class="info-header">
+                                        <div class="text-info">
+                                            <h3 class="playlist-title">Mystery &amp; Theories</h3>
+                                            <a href="playlist.html" class="view-playlist">View Playlist</a>
+                                        </div>
+                                        <div class="video-options">
+                                            <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                                            <ul class="options-menu">
+                                                <li><i class="uil uil-clock"></i> Add to queue</li>
+                                                <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                                                <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                                                <li><i class="uil uil-import"></i> Download</li>
+                                                <li><i class="uil uil-share-alt"></i> Share</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", () => {
+            // objects init
+            const modal = document.getElementById("playlistDesc");
+            const backdrop = document.getElementById("backdrop");
+            const closeBtn = document.getElementById("closeBtn");
+
+            // Open Modal
+            function openModal() {
+                modal.style.display = "block";
+                backdrop.style.display = "block";
+                setTimeout(() => {
+                    modal.classList.add("open");
+                }, 10);
+            }
+
+            // Close Modal
+            function closeModal() {
+                modal.classList.remove("open");
+                backdrop.style.display = "none";
+                setTimeout(() => {
+                    modal.style.display = "none";
+                }, 300);
+            }
+
+            closeBtn.addEventListener("click", closeModal);
+            backdrop.addEventListener("click", closeModal);
+            document.addEventListener("keydown", function (e) {
+                if (e.key === "Escape") closeModal();
+            });
+
+
+            document.querySelectorAll(".video-options").forEach((options) => {
+                const toggle = options.querySelector(".options-toggle");
+                const menu = options.querySelector(".options-menu");
+
+                toggle.addEventListener("click", (e) => {
+                    e.stopPropagation();
+                    document.querySelectorAll(".options-menu").forEach((m) => {
+                        if (m !== menu) m.classList.remove("show");
+                    });
+                    menu.classList.toggle("show");
+                });
+            });
+
+            document.addEventListener("click", () => {
+                document
+                    .querySelectorAll(".options-menu")
+                    .forEach((m) => m.classList.remove("show"));
+            });
+            const truncateElements = document.querySelectorAll(".truncate");
+            const elements = document.querySelectorAll(".truncate-lg");
+
+            // Truncate Text
+            truncateElements.forEach((el) => {
+                const originalText = el.textContent.trim();
+                const words = originalText.split(/\s+/);
+
+                if (words.length > 16) {
+                    const shortText = words.slice(0, 16).join(" ");
+
+                    el.innerHTML = `
+                                ${shortText}
+                                <span class="more-link" style="color: var(--black-color); font-weight: bold; cursor: pointer;" >...more</span>
+                            `;
+                    const moreLink = el.querySelector(".more-link");
+                    moreLink.addEventListener("click", () => {
+                        openModal();
+                    });
+                }
+            });
+
+            // truncate-lg
+            elements.forEach((el) => {
+                const originalText = el.textContent.trim();
+                const words = originalText.split(/\s+/);
+
+                if (words.length > 50) {
+                    const shortText = words.slice(0, 50).join(" ");
+
+                    el.innerHTML = `
+                                ${shortText}
+                                <span class="more-link" style="color: var(--black-color); font-weight: bold; cursor: pointer;" >...more</span>
+                            `;
+                    const moreLink = el.querySelector(".more-link");
+                    moreLink.addEventListener("click", () => {
+                        openModal();
+                    });
+                }
+            });
+
+        });
+    </script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

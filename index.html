@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | YouTube Clone</title>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+
+<body class="sidebar-hidden">
+  <div class="container">
+    <header>
+      <nav class="navbar">
+        <div class="nav-section nav-left">
+          <button class="nav-button menu-button">
+            <i class="uil uil-bars"></i>
+          </button>
+          <a href="#" class="nav-logo">
+            <img src="images/logo.svg" alt="Logo" class="logo-image" />
+            <h2 class="logo-text">YouTube</h2>
+          </a>
+        </div>
+
+        <div class="nav-section">
+          <button class="nav-button search-back-button" id="search-back-button">
+            <i class="uil uil-arrow-left"></i>
+          </button>
+        </div>
+
+        <div class="nav-section nav-center">
+          <form action="#" class="search-form">
+            <input type="search" placeholder="Search" class="search-input" required />
+            <button class="nav-button search-button">
+              <i class="uil uil-search"></i>
+            </button>
+          </form>
+          <button class="nav-button mic-button">
+            <i class="uil uil-microphone"></i>
+          </button>
+        </div>
+
+        <div class="nav-section nav-right">
+          <button class="nav-button search-button" id="search-button">
+            <i class="uil uil-search"></i>
+          </button>
+          <button class="nav-button theme-button">
+            <i class="uil uil-moon"></i>
+          </button>
+          <div class="video-options" style="display: flex; align-items: center;">
+            <img src="images/user.jpg" alt="User Image" class="user-image options-toggle" style="padding: 0;" />
+            <ul class="options-menu" style="right: 1%; top: 50px;">
+              <li><i class="uil uil-user"></i> My Profile</li>
+              <li><i class="uil uil-setting"></i> Settings</li>
+              <li><i class="uil uil-folder-plus"></i> Logout</li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Layout -->
+    <main class="main-layout">
+      <div class="screen-overlay"></div>
+
+      <!-- Mini Sidebar -->
+      <aside class="sidebar">
+        <div class="nav-section nav-left">
+          <button class="nav-button menu-button">
+            <i class="uil uil-bars"></i>
+          </button>
+          <a href="#" class="nav-logo">
+            <img src="images/logo.svg" alt="Logo" class="logo-image" />
+            <h2 class="logo-text">YouTube</h2>
+          </a>
+        </div>
+
+        <div class="links-container">
+          <div class="link-section">
+            <a href="#" class="link-item" title="Home"> <i class="uil uil-estate"></i> <span
+                class="link-text">Home</span> </a>
+            <a href="#" class="link-item" title="Shorts"> <i class="uil uil-video"></i> <span
+                class="link-text">Shorts</span> </a>
+            <a href="#" class="link-item" title="Subscriptions"> <i class="uil uil-tv-retro"></i> <span
+                class="link-text">Subscriptions</span> </a>
+          </div>
+          <div class="section-separator"></div>
+
+          <div class="link-section">
+            <h4 class="section-title">You</h4>
+            <a href="#" class="link-item" title="Your channel"> <i class="uil uil-user-square"></i> <span
+                class="link-text">Your channel</span> </a>
+            <a href="#" class="link-item" title="History"> <i class="uil uil-history"></i> <span
+                class="link-text">History</span> </a>
+            <a href="#" class="link-item" title="Watch later"> <i class="uil uil-clock"></i> <span
+                class="link-text">Watch later</span> </a>
+          </div>
+          <div class="section-separator"></div>
+
+          <div class="link-section">
+            <h4 class="section-title">Explore</h4>
+            <a href="#" class="link-item" title="Trending"> <i class="uil uil-fire"></i> <span
+                class="link-text">Trending</span> </a>
+            <a href="#" class="link-item" title="Music"> <i class="uil uil-music"></i> <span
+                class="link-text">Music</span> </a>
+            <a href="#" class="link-item" title="Gaming"> <i class="uil uil-basketball"></i> <span
+                class="link-text">Gaming</span> </a>
+            <a href="#" class="link-item" title="Sports"> <i class="uil uil-trophy"></i> <span
+                class="link-text">Sports</span> </a>
+          </div>
+          <div class="section-separator"></div>
+
+          <div class="link-section">
+            <h4 class="section-title">More from YouTube</h4>
+            <a href="#" class="link-item" title="YouTube Plus"> <i class="uil uil-shield-plus"></i> <span
+                class="link-text">YouTube Plus</span> </a>
+            <a href="#" class="link-item" title="YouTube Music"> <i class="uil uil-headphones-alt"></i> <span
+                class="link-text">YouTube Music</span> </a>
+            <a href="#" class="link-item" title="YouTube Kids"> <i class="uil uil-airplay"></i> <span
+                class="link-text">YouTube Kids</span> </a>
+          </div>
+          <div class="section-separator"></div>
+
+          <div class="link-section">
+            <a href="#" class="link-item" title="Settings"> <i class="uil uil-setting"></i> <span
+                class="link-text">Settings</span> </a>
+            <a href="#" class="link-item" title="Report"> <i class="uil uil-file-medical-alt"></i> <span
+                class="link-text">Report</span> </a>
+            <a href="#" class="link-item" title="Help"> <i class="uil uil-question-circle"></i> <span
+                class="link-text">Help</span> </a>
+            <a href="#" class="link-item" title="Feedback"> <i class="uil uil-exclamation-triangle"></i> <span
+                class="link-text">Feedback</span> </a>
+          </div>
+        </div>
+      </aside>
+
+      <div class="content-wrapper">
+
+        <div class="slider">
+          <div class="icon hide">
+            <span class="left-arrow">&lt;</span>
+          </div>
+          <!-- Category List -->
+          <ul class="category-list">
+            <li class="category-button active">All</li>
+            <li class="category-button">Website</li>
+            <li class="category-button">Music</li>
+            <li class="category-button">Gaming</li>
+            <li class="category-button">Node.js</li>
+            <li class="category-button">JavaScript</li>
+            <li class="category-button">React.js</li>
+            <li class="category-button">TypeScript</li>
+            <li class="category-button">Coding</li>
+            <li class="category-button">Next.js</li>
+            <li class="category-button">Data analysis</li>
+            <li class="category-button">Web design</li>
+            <li class="category-button">HTML</li>
+            <li class="category-button">Tailwind</li>
+            <li class="category-button">CSS</li>
+            <li class="category-button">Express.js</li>
+          </ul>
+          <div class="icon">
+            <span class="right-arrow">&gt;</span>
+          </div>
+        </div>
+
+        <!-- Video List -->
+        <div class="video-list">
+
+          <!-- 1 -->
+          <div class="video-card">
+            <div class="thumbnail-container">
+              <a href="watch.html">
+                <img src="https://i.ytimg.com/vi/lW8VVIpNITY/maxresdefault.jpg" alt="Video Thumbnail"
+                  class="thumbnail" />
+              </a>
+              <p class="duration">12:34</p>
+            </div>
+            <div class="video-info">
+              <a href="channel.html"><img src="images/user-1.jpg" alt="Channel Logo" class="icon" /></a>
+              <div class="video-details">
+                <a href="watch.html" class="title">CapCut Just Did What After Effects Users Brag About for FREE!</a>
+                <a href="channel.html" class="channel-name">Davinci</a>
+                <p class="views">1.2M Views • 3 weeks ago</p>
+              </div>
+              <div class="video-options">
+                <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                <ul class="options-menu">
+                  <li><i class="uil uil-clock"></i> Add to queue</li>
+                  <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                  <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                  <li><i class="uil uil-import"></i> Download</li>
+                  <li><i class="uil uil-share-alt"></i> Share</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="video-card">
+            <div class="thumbnail-container">
+              <a href="watch.html">
+                <img src="https://i.ytimg.com/vi/jElJ9fNPpa8/maxresdefault.jpg" alt="Video Thumbnail"
+                  class="thumbnail" />
+              </a>
+              <p class="duration">08:45</p>
+            </div>
+            <div class="video-info">
+              <a href="channel.html"><img src="images/user-2.jpg" alt="Channel Logo" class="icon" /></a>
+              <div class="video-details">
+                <a href="watch.html" class="title">11 things you should NEVER do after uploading a YouTube video</a>
+                <a href="channel.html" class="channel-name">Code Camp</a>
+                <p class="views">684K Views • 2 months ago</p>
+              </div>
+              <div class="video-options">
+                <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                <ul class="options-menu">
+                  <li><i class="uil uil-clock"></i> Add to queue</li>
+                  <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                  <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                  <li><i class="uil uil-import"></i> Download</li>
+                  <li><i class="uil uil-share-alt"></i> Share</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="video-card">
+            <div class="thumbnail-container">
+              <a href="watch.html">
+                <img src="https://i.ytimg.com/vi/SdL55HWNPRM/maxresdefault.jpg" alt="Video Thumbnail"
+                  class="thumbnail" />
+              </a>
+              <p class="duration">16:02</p>
+            </div>
+            <div class="video-info">
+              <a href="channel.html"><img src="images/user-1.jpg" alt="Channel Logo" class="icon" /></a>
+              <div class="video-details">
+                <a href="watch.html" class="title">How does a Tank work? (M1A2 Abrams)</a>
+                <a href="channel.html" class="channel-name">Jared Owen</a>
+                <p class="views">3.4M Views • 1 week ago</p>
+              </div>
+              <div class="video-options">
+                <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                <ul class="options-menu">
+                  <li><i class="uil uil-clock"></i> Add to queue</li>
+                  <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                  <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                  <li><i class="uil uil-import"></i> Download</li>
+                  <li><i class="uil uil-share-alt"></i> Share</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4 -->
+          <div class="video-card">
+            <div class="thumbnail-container">
+              <a href="watch.html">
+                <img src="https://i.ytimg.com/vi/caJmajiuPPw/maxresdefault.jpg" alt="Video Thumbnail"
+                  class="thumbnail" />
+              </a>
+              <p class="duration">11:59</p>
+            </div>
+            <div class="video-info">
+              <a href="channel.html"><img src="images/user-1.jpg" alt="Channel Logo" class="icon" /></a>
+              <div class="video-details">
+                <a href="watch.html" class="title">Why Hitler Didn't Attack Switzerland During WW2?</a>
+                <a href="channel.html" class="channel-name">Military Breakdowns</a>
+                <p class="views">2.1M Views • 4 days ago</p>
+              </div>
+              <div class="video-options">
+                <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                <ul class="options-menu">
+                  <li><i class="uil uil-clock"></i> Add to queue</li>
+                  <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                  <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                  <li><i class="uil uil-import"></i> Download</li>
+                  <li><i class="uil uil-share-alt"></i> Share</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5 -->
+          <div class="video-card">
+            <div class="thumbnail-container">
+              <a href="watch.html">
+                <img src="https://i.ytimg.com/vi/GUUQF1t8ap0/maxresdefault.jpg" alt="Video Thumbnail"
+                  class="thumbnail" />
+              </a>
+              <p class="duration">09:21</p>
+            </div>
+            <div class="video-info">
+              <a href="channel.html"><img src="images/user-2.jpg" alt="Channel Logo" class="icon" /></a>
+              <div class="video-details">
+                <a href="watch.html" class="title">Trae AI – The Smartest AI IDE + MCP Tool for Developers</a>
+                <a href="channel.html" class="channel-name">Mystery Files</a>
+                <p class="views">859K Views • 2 weeks ago</p>
+              </div>
+              <div class="video-options">
+                <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                <ul class="options-menu">
+                  <li><i class="uil uil-clock"></i> Add to queue</li>
+                  <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                  <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                  <li><i class="uil uil-import"></i> Download</li>
+                  <li><i class="uil uil-share-alt"></i> Share</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6 - 12 coming next -->
+          <div class="video-card">
+            <div class="thumbnail-container">
+              <a href="watch.html">
+                <img src="https://i.ytimg.com/vi/3eUjOV0ZlSQ/maxresdefault.jpg" alt="Video Thumbnail"
+                  class="thumbnail" />
+              </a>
+              <p class="duration">09:21</p>
+            </div>
+            <div class="video-info">
+              <a href="channel.html"><img src="images/user-2.jpg" alt="Channel Logo" class="icon" /></a>
+              <div class="video-details">
+                <a href="watch.html" class="title">When Romania Executed Its Dictator on Live TV</a>
+                <a href="channel.html" class="channel-name">Mystery History</a>
+                <p class="views">859K Views • 2 weeks ago</p>
+              </div>
+              <div class="video-options">
+                <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                <ul class="options-menu">
+                  <li><i class="uil uil-clock"></i> Add to queue</li>
+                  <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                  <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                  <li><i class="uil uil-import"></i> Download</li>
+                  <li><i class="uil uil-share-alt"></i> Share</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <div class="thumbnail-container">
+              <a href="watch.html">
+                <img src="https://i.ytimg.com/vi/ET_hFOSg3Ss/maxresdefault.jpg" alt="Video Thumbnail"
+                  class="thumbnail" />
+              </a>
+              <p class="duration">09:21</p>
+            </div>
+            <div class="video-info">
+              <a href="channel.html"><img src="images/user-2.jpg" alt="Channel Logo" class="icon" /></a>
+              <div class="video-details">
+                <a href="watch.html" class="title">Miniature Jet Fighter Flies 500KM/H</a>
+                <a href="channel.html" class="channel-name">Supercar Blondie</a>
+                <p class="views">859K Views • 2 weeks ago</p>
+              </div>
+              <div class="video-options">
+                <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                <ul class="options-menu">
+                  <li><i class="uil uil-clock"></i> Add to queue</li>
+                  <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                  <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                  <li><i class="uil uil-import"></i> Download</li>
+                  <li><i class="uil uil-share-alt"></i> Share</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <div class="thumbnail-container">
+              <a href="watch.html">
+                <img src="https://i.ytimg.com/vi/QIOoG6Z4rbA/maxresdefault.jpg" alt="Video Thumbnail"
+                  class="thumbnail" />
+              </a>
+              <p class="duration">09:21</p>
+            </div>
+            <div class="video-info">
+              <a href="channel.html"><img src="images/user-2.jpg" alt="Channel Logo" class="icon" /></a>
+              <div class="video-details">
+                <a href="watch.html" class="title">Fleet of Russian missile launchers 'take out drones mid-air'</a>
+                <a href="channel.html" class="channel-name">The Sun</a>
+                <p class="views">859K Views • 2 weeks ago</p>
+              </div>
+              <div class="video-options">
+                <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                <ul class="options-menu">
+                  <li><i class="uil uil-clock"></i> Add to queue</li>
+                  <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                  <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                  <li><i class="uil uil-import"></i> Download</li>
+                  <li><i class="uil uil-share-alt"></i> Share</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <div class="thumbnail-container">
+              <a href="watch.html">
+                <img src="https://i.ytimg.com/vi/udm93uITPgI/maxresdefault.jpg" alt="Video Thumbnail"
+                  class="thumbnail" />
+              </a>
+              <p class="duration">09:21</p>
+            </div>
+            <div class="video-info">
+              <a href="channel.html"><img src="images/user-2.jpg" alt="Channel Logo" class="icon" /></a>
+              <div class="video-details">
+                <a href="watch.html" class="title">Russian Pantsir-S1 In Action</a>
+                <a href="channel.html" class="channel-name">Armies Power</a>
+                <p class="views">859K Views • 2 weeks ago</p>
+              </div>
+              <div class="video-options">
+                <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                <ul class="options-menu">
+                  <li><i class="uil uil-clock"></i> Add to queue</li>
+                  <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                  <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                  <li><i class="uil uil-import"></i> Download</li>
+                  <li><i class="uil uil-share-alt"></i> Share</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <div class="thumbnail-container">
+              <a href="watch.html">
+                <img src="https://i.ytimg.com/vi/mWXASDbymuE/maxresdefault.jpg" alt="Video Thumbnail"
+                  class="thumbnail" />
+              </a>
+              <p class="duration">09:21</p>
+            </div>
+            <div class="video-info">
+              <a href="channel.html"><img src="images/user-2.jpg" alt="Channel Logo" class="icon" /></a>
+              <div class="video-details">
+                <a href="watch.html" class="title">DIY HOME THEATER - FULL TIMELAPSE</a>
+                <a href="channel.html" class="channel-name">MisterWalt</a>
+                <p class="views">859K Views • 2 weeks ago</p>
+              </div>
+              <div class="video-options">
+                <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                <ul class="options-menu">
+                  <li><i class="uil uil-clock"></i> Add to queue</li>
+                  <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                  <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                  <li><i class="uil uil-import"></i> Download</li>
+                  <li><i class="uil uil-share-alt"></i> Share</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <div class="thumbnail-container">
+              <a href="watch.html">
+                <img src="https://i.ytimg.com/vi/VLY0xWUEVLo/maxresdefault.jpg" alt="Video Thumbnail"
+                  class="thumbnail" />
+              </a>
+              <p class="duration">09:21</p>
+            </div>
+            <div class="video-info">
+              <a href="channel.html"><img src="images/user-2.jpg" alt="Channel Logo" class="icon" /></a>
+              <div class="video-details">
+                <a href="watch.html" class="title">Canva Map Animation Tutorial From Beginner to Pro in Minutes</a>
+                <a href="channel.html" class="channel-name">Webon</a>
+                <p class="views">859K Views • 2 weeks ago</p>
+              </div>
+              <div class="video-options">
+                <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                <ul class="options-menu">
+                  <li><i class="uil uil-clock"></i> Add to queue</li>
+                  <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                  <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                  <li><i class="uil uil-import"></i> Download</li>
+                  <li><i class="uil uil-share-alt"></i> Share</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <div class="thumbnail-container">
+              <a href="watch.html">
+                <img src="https://i.ytimg.com/vi/_XooypXRcWg/maxresdefault.jpg" alt="Video Thumbnail"
+                  class="thumbnail" />
+              </a>
+              <p class="duration">09:21</p>
+            </div>
+            <div class="video-info">
+              <a href="channel.html"><img src="images/user-2.jpg" alt="Channel Logo" class="icon" /></a>
+              <div class="video-details">
+                <a href="watch.html" class="title">How Batteries Are Produced in Factories</a>
+                <a href="channel.html" class="channel-name">Amazing Tech</a>
+                <p class="views">859K Views • 2 weeks ago</p>
+              </div>
+              <div class="video-options">
+                <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                <ul class="options-menu">
+                  <li><i class="uil uil-clock"></i> Add to queue</li>
+                  <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                  <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                  <li><i class="uil uil-import"></i> Download</li>
+                  <li><i class="uil uil-share-alt"></i> Share</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <div class="thumbnail-container">
+              <a href="watch.html">
+                <img src="https://i.ytimg.com/vi/2mgUFKU6tnY/maxresdefault.jpg" alt="Video Thumbnail"
+                  class="thumbnail" />
+              </a>
+              <p class="duration">09:21</p>
+            </div>
+            <div class="video-info">
+              <a href="channel.html"><img src="images/user-2.jpg" alt="Channel Logo" class="icon" /></a>
+              <div class="video-details">
+                <a href="watch.html" class="title">Top 6 MIND BLOWING Dark Web Stories | TechBar</a>
+                <a href="channel.html" class="channel-name">TechBar</a>
+                <p class="views">859K Views • 2 weeks ago</p>
+              </div>
+              <div class="video-options">
+                <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                <ul class="options-menu">
+                  <li><i class="uil uil-clock"></i> Add to queue</li>
+                  <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                  <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                  <li><i class="uil uil-import"></i> Download</li>
+                  <li><i class="uil uil-share-alt"></i> Share</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll(".video-options").forEach((options) => {
+        const toggle = options.querySelector(".options-toggle");
+        const menu = options.querySelector(".options-menu");
+
+        toggle.addEventListener("click", (e) => {
+          e.stopPropagation();
+          document.querySelectorAll(".options-menu").forEach((m) => {
+            if (m !== menu) m.classList.remove("show");
+          });
+          menu.classList.toggle("show");
+        });
+      });
+
+      document.addEventListener("click", () => {
+        document.querySelectorAll(".options-menu").forEach((m) => m.classList.remove("show"));
+      });
+    });
+
+  </script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>

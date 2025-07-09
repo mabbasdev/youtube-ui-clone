@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Results | YouTube Clone</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/search.css" />
+
+</head>
+
+<body class="sidebar-hidden">
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                <div class="nav-section nav-left">
+                    <button class="nav-button menu-button">
+                        <i class="uil uil-bars"></i>
+                    </button>
+                    <a href="#" class="nav-logo">
+                        <img src="images/logo.svg" alt="Logo" class="logo-image" />
+                        <h2 class="logo-text">YouTube</h2>
+                    </a>
+                </div>
+
+                <div class="nav-section">
+                    <button class="nav-button search-back-button" id="search-back-button">
+                        <i class="uil uil-arrow-left"></i>
+                    </button>
+                </div>
+
+                <div class="nav-section nav-center">
+                    <form action="#" class="search-form">
+                        <input type="search" placeholder="Search" class="search-input" required />
+                        <button class="nav-button search-button">
+                            <i class="uil uil-search"></i>
+                        </button>
+                    </form>
+                    <button class="nav-button mic-button">
+                        <i class="uil uil-microphone"></i>
+                    </button>
+                </div>
+
+                <div class="nav-section nav-right">
+                    <button class="nav-button search-button" id="search-button">
+                        <i class="uil uil-search"></i>
+                    </button>
+                    <button class="nav-button theme-button">
+                        <i class="uil uil-moon"></i>
+                    </button>
+                    <img src="images/user.jpg" alt="User Image" class="user-image" />
+                </div>
+            </nav>
+        </header>
+
+
+        <!-- Main Layout -->
+        <main class="main-layout">
+            <div class="screen-overlay"></div>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="nav-section nav-left">
+                    <button class="nav-button menu-button">
+                        <i class="uil uil-bars"></i>
+                    </button>
+                    <a href="#" class="nav-logo">
+                        <img src="images/logo.svg" alt="Logo" class="logo-image" />
+                        <h2 class="logo-text">YouTube</h2>
+                    </a>
+                </div>
+
+                <div class="links-container">
+                    <div class="link-section">
+                        <a href="#" class="link-item" title="Home"> <i class="uil uil-estate"></i> <span
+                                class="link-text">Home</span> </a>
+                        <a href="#" class="link-item" title="Shorts"> <i class="uil uil-video"></i> <span
+                                class="link-text">Shorts</span> </a>
+                        <a href="#" class="link-item" title="Subscriptions"> <i class="uil uil-tv-retro"></i> <span
+                                class="link-text">Subscriptions</span> </a>
+                    </div>
+                    <div class="section-separator"></div>
+
+                    <div class="link-section">
+                        <h4 class="section-title">You</h4>
+                        <a href="#" class="link-item" title="Your channel"> <i class="uil uil-user-square"></i> <span
+                                class="link-text">Your channel</span> </a>
+                        <a href="#" class="link-item" title="History"> <i class="uil uil-history"></i> <span
+                                class="link-text">History</span> </a>
+                        <a href="#" class="link-item" title="Watch later"> <i class="uil uil-clock"></i> <span
+                                class="link-text">Watch later</span> </a>
+                    </div>
+                    <div class="section-separator"></div>
+
+                    <div class="link-section">
+                        <h4 class="section-title">Explore</h4>
+                        <a href="#" class="link-item" title="Trending"> <i class="uil uil-fire"></i> <span
+                                class="link-text">Trending</span> </a>
+                        <a href="#" class="link-item" title="Music"> <i class="uil uil-music"></i> <span
+                                class="link-text">Music</span> </a>
+                        <a href="#" class="link-item" title="Gaming"> <i class="uil uil-basketball"></i> <span
+                                class="link-text">Gaming</span> </a>
+                        <a href="#" class="link-item" title="Sports"> <i class="uil uil-trophy"></i> <span
+                                class="link-text">Sports</span> </a>
+                    </div>
+                    <div class="section-separator"></div>
+
+                    <div class="link-section">
+                        <h4 class="section-title">More from YouTube</h4>
+                        <a href="#" class="link-item" title="YouTube Plus"> <i class="uil uil-shield-plus"></i> <span
+                                class="link-text">YouTube Plus</span> </a>
+                        <a href="#" class="link-item" title="YouTube Music"> <i class="uil uil-headphones-alt"></i>
+                            <span class="link-text">YouTube Music</span> </a>
+                        <a href="#" class="link-item" title="YouTube Kids"> <i class="uil uil-airplay"></i> <span
+                                class="link-text">YouTube Kids</span> </a>
+                    </div>
+                    <div class="section-separator"></div>
+
+                    <div class="link-section">
+                        <a href="#" class="link-item" title="Settings"> <i class="uil uil-setting"></i> <span
+                                class="link-text">Settings</span> </a>
+                        <a href="#" class="link-item" title="Report"> <i class="uil uil-file-medical-alt"></i> <span
+                                class="link-text">Report</span> </a>
+                        <a href="#" class="link-item" title="Help"> <i class="uil uil-question-circle"></i> <span
+                                class="link-text">Help</span> </a>
+                        <a href="#" class="link-item" title="Feedback"> <i class="uil uil-exclamation-triangle"></i>
+                            <span class="link-text">Feedback</span> </a>
+                    </div>
+                </div>
+            </aside>
+
+            <div class="content-wrapper">
+                <!-- Search Filters -->
+                <div class="slider">
+                    <div class="icon hide">
+                        <span class="left-arrow">&lt;</span>
+                    </div>
+                    <!-- Category List -->
+                    <ul class="category-list">
+                        <li class="category-button showfilters">Filters</li>
+                        <li class="category-button active">All</li>
+                        <li class="category-button">Shorts</li>
+                        <li class="category-button">Videos</li>
+                        <li class="category-button">Unwatched</li>
+                        <li class="category-button">Watched</li>
+                        <li class="category-button">Recently Uploaded</li>
+                        <li class="category-button">Live</li>
+                    </ul>
+                    <div class="icon">
+                        <span class="right-arrow">&gt;</span>
+                    </div>
+                </div>
+                <div class="backdrop" id="backdrop"></div>
+
+                <div class="modal" id="filtermodal" role="dialog" aria-modal="true" aria-labelledby="filtermodalTitle">
+                    <div class="modal-header">
+                        <div>
+                            <h2 id="filtermodalTitle">Search Filters</h2>
+                        </div>
+                        <button class="close-btn" id="closeBtn" aria-label="Close modal">&times;</button>
+                    </div>
+
+                    <div class="modal-content filters-grid">
+                        <!-- Upload Date -->
+                        <div class="filter-column">
+                            <h4>UPLOAD DATE</h4>
+                            <ul>
+                                <li>Last hour</li>
+                                <li>Today</li>
+                                <li>This week</li>
+                                <li>This month</li>
+                                <li>This year</li>
+                            </ul>
+                        </div>
+
+                        <!-- Type -->
+                        <div class="filter-column">
+                            <h4>TYPE</h4>
+                            <ul>
+                                <li>Video</li>
+                                <li>Channel</li>
+                                <li>Playlist</li>
+                                <li>Movie</li>
+                            </ul>
+                        </div>
+
+                        <!-- Duration -->
+                        <div class="filter-column">
+                            <h4>DURATION</h4>
+                            <ul>
+                                <li>Under 4 minutes</li>
+                                <li>4 - 20 minutes</li>
+                                <li>Over 20 minutes</li>
+                            </ul>
+                        </div>
+
+                        <!-- Features -->
+                        <div class="filter-column">
+                            <h4>FEATURES</h4>
+                            <ul>
+                                <li>Live</li>
+                                <li>4K</li>
+                                <li>HD</li>
+                                <li>Subtitles/CC</li>
+                                <li>Creative Commons</li>
+                                <li>360°</li>
+                                <li>VR180</li>
+                                <li>3D</li>
+                                <li>HDR</li>
+                                <li>Location</li>
+                                <li>Purchased</li>
+                            </ul>
+                        </div>
+
+                        <!-- Sort By -->
+                        <div class="filter-column">
+                            <h4>SORT BY</h4>
+                            <ul>
+                                <li><strong>Relevance</strong></li>
+                                <li>Upload date</li>
+                                <li>View count</li>
+                                <li>Rating</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="modal-buttons">
+                        <button class="share-btn">Apply Filters</button>
+                        <button class="report-btn">Clear</button>
+                    </div>
+                </div>
+
+                <!-- Channel Card -->
+                <div class="search-channel-card">
+                    <div class="channel-avatar-container">
+                        <img src="images/logo.jpg" alt="Zem TV" class="channel-avatar">
+                        <!-- <div class="verified-badge">
+                            <i class="uil uil-check"></i>
+                        </div> -->
+                    </div>
+                    <div class="channel-info">
+                        <div class="channel-details">
+                            <div class="channel-title-container">
+                                <h2 class="channel-title">Zem TV</h2>
+                            </div>
+                            <p class="channel-handle">@zemtv • 5.2M subscribers</p>
+                            <p class="channel-description">
+                                <span class="description-text">This is the official youtube channel of Zem TV. This
+                                    Channel includes Interesting facts and figures about the most interesting
+                                    individuals on earth.</span>
+                            </p>
+                        </div>
+                        <div class="channel-actions">
+                            <button class="subscribe-button">
+                                <span>Subscribe</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-separator"></div>
+
+                <!-- Latest Videos Section -->
+                <div class="search-section">
+                    <h2 class="section-title">Latest from Zem TV</h2>
+
+                    <div class="search-videos-grid">
+                        <!-- Video 1 -->
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <img src="https://i.ytimg.com/vi/BI2QfuAhrCk/maxresdefault.jpg"
+                                    alt="Why Qatar Treated Trump Like a KING + $400M Gift">
+                                <div class="duration">13:23</div>
+                            </div>
+                            <div class="video-info">
+                                <div class="info-header">
+                                    <div class="text-info">
+                                        <h3 class="video-title">Israel's Biggest Attack on Iran | Can Iran Defend
+                                            Itself? | Faisal Warraich</h3>
+                                        <p class="video-stats">58M views • 1 day ago</p>
+                                        <div class="c-info">
+                                            <a href="channel.html" class="avatar-container">
+                                                <img src="images/user-1.jpg" alt="Channel Avatar">
+                                            </a>
+                                            <div>
+                                                <a href="channel.html" class="video-desc">Zem TV</a>
+                                                <p class="m-video-stats"> • 58M views • 1 day ago</p>
+                                            </div>
+                                        </div>
+                                        <p class="video-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Excepturi dolorum rem distinctio optio blanditiis laudantium ad quos culpa
+                                            debitis ex eius, nulla dolore, officia nihil suscipit ipsam magni
+                                            necessitatibus sequi nemo veritatis! At possimus placeat, quod quibusdam
+                                            corrupti, quisquam officiis impedit totam aliquam sit dicta illum, dolore
+                                            assumenda molestias aspernatur.</p>
+                                    </div>
+                                    <div class="video-options">
+                                        <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                                        <ul class="options-menu">
+                                            <li><i class="uil uil-clock"></i> Add to queue</li>
+                                            <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                                            <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                                            <li><i class="uil uil-import"></i> Download</li>
+                                            <li><i class="uil uil-share-alt"></i> Share</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Video 2 -->
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <img src="https://i.ytimg.com/vi/HFGdv8hIRnQ/maxresdefault.jpg"
+                                    alt="Why Even Russia & China Fear This Jet">
+                                <div class="duration">18:36</div>
+                            </div>
+                            <div class="video-info">
+                                <div class="info-header">
+                                    <div class="text-info">
+                                        <h3 class="video-title">Israel's Biggest Attack on Iran | Can Iran Defend
+                                            Itself? | Faisal Warraich</h3>
+                                        <p class="video-stats">58M views • 1 day ago</p>
+                                        <div class="c-info">
+                                            <a href="channel.html" class="avatar-container">
+                                                <img src="images/user-1.jpg" alt="Channel Avatar">
+                                            </a>
+                                            <div>
+                                                <a href="channel.html" class="video-desc">Zem TV</a>
+                                                <p class="m-video-stats"> • 58M views • 1 day ago</p>
+                                            </div>
+                                        </div>
+                                        <p class="video-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Excepturi dolorum rem distinctio optio blanditiis laudantium ad quos culpa
+                                            debitis ex eius, nulla dolore, officia nihil suscipit ipsam magni
+                                            necessitatibus sequi nemo veritatis! At possimus placeat, quod quibusdam
+                                            corrupti, quisquam officiis impedit totam aliquam sit dicta illum, dolore
+                                            assumenda molestias aspernatur.</p>
+                                    </div>
+                                    <div class="video-options">
+                                        <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                                        <ul class="options-menu">
+                                            <li><i class="uil uil-clock"></i> Add to queue</li>
+                                            <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                                            <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                                            <li><i class="uil uil-import"></i> Download</li>
+                                            <li><i class="uil uil-share-alt"></i> Share</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Video 3 -->
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <img src="https://i.ytimg.com/vi/SBhCHPnWkpI/maxresdefault.jpg"
+                                    alt="They Said Einstein Was 'Useless'... Until THIS Happened">
+                                <div class="duration">21:43</div>
+                            </div>
+                            <div class="video-info">
+                                <div class="info-header">
+                                    <div class="text-info">
+                                        <h3 class="video-title">Israel's Biggest Attack on Iran | Can Iran Defend
+                                            Itself? | Faisal Warraich</h3>
+                                        <p class="video-stats">58M views • 1 day ago</p>
+                                        <div class="c-info">
+                                            <a href="channel.html" class="avatar-container">
+                                                <img src="images/user-1.jpg" alt="Channel Avatar">
+                                            </a>
+                                            <div>
+                                                <a href="channel.html" class="video-desc">Zem TV</a>
+                                                <p class="m-video-stats"> • 58M views • 1 day ago</p>
+                                            </div>
+                                        </div>
+                                        <p class="video-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Excepturi dolorum rem distinctio optio blanditiis laudantium ad quos culpa
+                                            debitis ex eius, nulla dolore, officia nihil suscipit ipsam magni
+                                            necessitatibus sequi nemo veritatis! At possimus placeat, quod quibusdam
+                                            corrupti, quisquam officiis impedit totam aliquam sit dicta illum, dolore
+                                            assumenda molestias aspernatur.</p>
+                                    </div>
+                                    <div class="video-options">
+                                        <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                                        <ul class="options-menu">
+                                            <li><i class="uil uil-clock"></i> Add to queue</li>
+                                            <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                                            <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                                            <li><i class="uil uil-import"></i> Download</li>
+                                            <li><i class="uil uil-share-alt"></i> Share</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Video 4 -->
+                        <div class="video-card">
+                            <div class="video-thumbnail">
+                                <img src="https://i.ytimg.com/vi/gLDcNX_TmWQ/maxresdefault.jpg"
+                                    alt="One Thing on Mars Even NASA Fears!">
+                                <div class="duration">10:15</div>
+                            </div>
+                            <div class="video-info">
+                                <div class="info-header">
+                                    <div class="text-info">
+                                        <h3 class="video-title">Israel's Biggest Attack on Iran | Can Iran Defend
+                                            Itself? | Faisal Warraich</h3>
+                                        <p class="video-stats">58M views • 1 day ago</p>
+                                        <div class="c-info">
+                                            <a href="channel.html" class="avatar-container">
+                                                <img src="images/user-1.jpg" alt="Channel Avatar">
+                                            </a>
+                                            <div>
+                                                <a href="channel.html" class="video-desc">Zem TV</a>
+                                                <p class="m-video-stats"> • 58M views • 1 day ago</p>
+                                            </div>
+                                        </div>
+                                        <p class="video-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Excepturi dolorum rem distinctio optio blanditiis laudantium ad quos culpa
+                                            debitis ex eius, nulla dolore, officia nihil suscipit ipsam magni
+                                            necessitatibus sequi nemo veritatis! At possimus placeat, quod quibusdam
+                                            corrupti, quisquam officiis impedit totam aliquam sit dicta illum, dolore
+                                            assumenda molestias aspernatur.</p>
+                                    </div>
+                                    <div class="video-options">
+                                        <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                                        <ul class="options-menu">
+                                            <li><i class="uil uil-clock"></i> Add to queue</li>
+                                            <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                                            <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                                            <li><i class="uil uil-import"></i> Download</li>
+                                            <li><i class="uil uil-share-alt"></i> Share</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Community Posts Section -->
+                <!-- <div class="search-section">
+                    <h2 class="section-title">Community posts</h2>
+
+                    <div class="posts-grid">
+                        <div class="post-card">
+                            <div class="post-header">
+                                <img src="images/logo.jpg" alt="Zem TV" class="post-channel-avatar">
+                                <div class="post-channel-info">
+                                    <h3 class="post-channel-name">Zem TV</h3>
+                                    <p class="post-time">2 days ago</p>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <p>New Video is here: https://youtu.be/nExzDcQE8</p>
+                            </div>
+                            <div class="post-actions">
+                                <button class="post-action"><i class="uil uil-thumbs-up"></i> 1.2K</button>
+                                <button class="post-action"><i class="uil uil-comment-alt"></i> 45</button>
+                                <button class="post-action"><i class="uil uil-share-alt"></i> Share</button>
+                            </div>
+                        </div>
+
+                        <div class="post-card">
+                            <div class="post-header">
+                                <img src="images/logo.jpg" alt="Zem TV" class="post-channel-avatar">
+                                <div class="post-channel-info">
+                                    <h3 class="post-channel-name">Zem TV</h3>
+                                    <p class="post-time">8 days ago</p>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <p>New Video is here: https://youtu.be/BZQfJabrCk</p>
+                            </div>
+                            <div class="post-actions">
+                                <button class="post-action"><i class="uil uil-thumbs-up"></i> 890</button>
+                                <button class="post-action"><i class="uil uil-comment-alt"></i> 32</button>
+                                <button class="post-action"><i class="uil uil-share-alt"></i> Share</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Shorts Section -->
+                <div class="search-section">
+                    <h2 class="section-title">Shorts</h2>
+
+                    <div class="search-shorts-grid">
+                        <div class="shorts-item">
+                            <div class="shorts-thumbnail">
+                                <img src="https://i.ytimg.com/vi/QU7DlV83eYA/maxresdefault.jpg"
+                                    alt="Island Mystery: Why Everyone Vanished Overnight!">
+                                <div class="shorts-icon">
+                                    <i class="uil uil-youtube"></i>
+                                </div>
+                            </div>
+                            <div class="shorts-details">
+                                <h3 class="shorts-title">Island Mystery: Why Everyone Vanished Overnight!</h3>
+                                <p class="shorts-stats">17K views</p>
+                            </div>
+                        </div>
+
+                        <div class="shorts-item">
+                            <div class="shorts-thumbnail">
+                                <img src="https://i.ytimg.com/vi/7urNft-drf4/maxresdefault.jpg"
+                                    alt="Tragic Mistake Over Lake Erie: The Skydiving Disaster">
+                                <div class="shorts-icon">
+                                    <i class="uil uil-youtube"></i>
+                                </div>
+                            </div>
+                            <div class="shorts-details">
+                                <h3 class="shorts-title">Tragic Mistake Over Lake Erie: The Skydiving Disaster</h3>
+                                <p class="shorts-stats">157K views</p>
+                            </div>
+                        </div>
+
+                        <div class="shorts-item">
+                            <div class="shorts-thumbnail">
+                                <img src="https://i.ytimg.com/vi/qhlS7vR2b44/maxresdefault.jpg"
+                                    alt="What Happened to this Foreigner in North Korea?">
+                                <div class="shorts-icon">
+                                    <i class="uil uil-youtube"></i>
+                                </div>
+                            </div>
+                            <div class="shorts-details">
+                                <h3 class="shorts-title">What Happened to this Foreigner in North Korea?</h3>
+                                <p class="shorts-stats">85K views</p>
+                            </div>
+                        </div>
+
+                        <div class="shorts-item">
+                            <div class="shorts-thumbnail">
+                                <img src="https://i.ytimg.com/vi/X_Xblks3xkc/maxresdefault.jpg"
+                                    alt="Why Tornadoes Love This Place!">
+                                <div class="shorts-icon">
+                                    <i class="uil uil-youtube"></i>
+                                </div>
+                            </div>
+                            <div class="shorts-details">
+                                <h3 class="shorts-title">Why Tornadoes Love This Place!</h3>
+                                <p class="shorts-stats">7.4K views</p>
+                            </div>
+                        </div>
+
+                        <div class="shorts-item">
+                            <div class="shorts-thumbnail">
+                                <img src="https://i.ytimg.com/vi/qhlS7vR2b44/maxresdefault.jpg"
+                                    alt="What Happened to this Foreigner in North Korea?">
+                                <div class="shorts-icon">
+                                    <i class="uil uil-youtube"></i>
+                                </div>
+                            </div>
+                            <div class="shorts-details">
+                                <h3 class="shorts-title">What Happened to this Foreigner in North Korea?</h3>
+                                <p class="shorts-stats">85K views</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Back to top button -->
+    <button id="back-to-top" class="back-to-top">
+        <i class="uil uil-arrow-up"></i>
+    </button>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // // Subscribe button functionality
+            // const subscribeButton = document.querySelector(".subscribe-button");
+            // if (subscribeButton) {
+            //     subscribeButton.addEventListener("click", function () {
+            //         const isSubscribed = this.classList.toggle("subscribed");
+            //         const text = this.querySelector("span");
+
+            //         if (isSubscribed) {
+            //             text.textContent = "Subscribed";
+            //         } else {
+            //             text.textContent = "Subscribe";
+            //         }
+            //     });
+            // }
+
+
+
+            // Back to top button
+            const backToTopButton = document.getElementById("back-to-top");
+            window.addEventListener("scroll", () => {
+                if (window.pageYOffset > 300) {
+                    backToTopButton.style.display = "block";
+                } else {
+                    backToTopButton.style.display = "none";
+                }
+            });
+
+            backToTopButton.addEventListener("click", () => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            });
+
+            // Video options dropdown
+            document.querySelectorAll(".video-options").forEach((options) => {
+                const toggle = options.querySelector(".options-toggle");
+                const menu = options.querySelector(".options-menu");
+
+                toggle.addEventListener("click", (e) => {
+                    e.stopPropagation();
+                    document.querySelectorAll(".options-menu").forEach((m) => {
+                        if (m !== menu) m.classList.remove("show");
+                    });
+                    menu.classList.toggle("show");
+                });
+            });
+
+            document.addEventListener("click", () => {
+                document.querySelectorAll(".options-menu").forEach((menu) => {
+                    menu.classList.remove("show");
+                });
+            });
+
+            // Category scrolling functionality (same as index.html)
+            const tab = document.querySelector(".filter-list"),
+                badges = tab.querySelectorAll(".filter-button"),
+                icons = document.querySelectorAll(".icon span"),
+                { clientWidth, scrollWidth } = tab;
+
+            badges.forEach((badge) => {
+                badge.addEventListener("click", () => {
+                    tab.querySelector(".active").classList.remove("active");
+                    badge.classList.add("active");
+
+                    badge.scrollIntoView({ inline: "center" });
+                });
+            });
+
+            icons.forEach((icon) => {
+                icon.addEventListener("click", () => {
+                    tab.style = "";
+                    tab.scrollLeft += icon.classList.contains("right-arrow") ? 300 : -300;
+                });
+            });
+
+            tab.addEventListener("scroll", (e) => {
+                updateIcons(e.target.scrollLeft);
+            });
+
+            tab.addEventListener("wheel", (e) => {
+                tab.style.scrollBehavior = "auto";
+                tab.scrollLeft += e.deltaY;
+            });
+
+            function updateIcons(scrolled_width) {
+                icons[0].parentElement.classList.toggle("hide", scrolled_width <= 1);
+                icons[1].parentElement.classList.toggle(
+                    "hide",
+                    scrollWidth - (clientWidth + scrolled_width) <= 0
+                );
+            }
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            // Show loading skeleton
+            const skeletonLoader = document.querySelector(".skeleton-loader");
+            const channelTabs = document.querySelector(".channel-tabs");
+            const tabs = document.querySelectorAll(".channel-tab");
+            const sortButton = document.querySelector(".sort-button");
+            const showMoreBtn = document.querySelector(".show-more");
+            const descriptionText = document.querySelector(".description-text");
+
+            // Simulate loading with timeout
+            setTimeout(() => {
+                skeletonLoader.style.display = "none";
+                loadVideos();
+                loadShorts();
+            }, 1500);
+
+            // Channel tabs scrolling
+            if (channelTabs) {
+                channelTabs.addEventListener("wheel", function (e) {
+                    this.scrollLeft += e.deltaY;
+                    e.preventDefault();
+                });
+            }
+
+            // Tab switching
+            tabs.forEach((tab) => {
+                tab.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    tabs.forEach((t) => t.classList.remove("active"));
+                    this.classList.add("active");
+
+                    // Add animation
+                    this.classList.add("animate__animated", "animate__fadeIn");
+                    setTimeout(() => {
+                        this.classList.remove("animate__animated", "animate__fadeIn");
+                    }, 300);
+                });
+            });
+
+            // Sort button functionality
+            if (sortButton) {
+                sortButton.addEventListener("click", function () {
+                    // This would show a dropdown in a real implementation
+                    alert("Sort options would appear here");
+                });
+            }
+
+            // Show more description
+            if (showMoreBtn && descriptionText) {
+                showMoreBtn.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    descriptionText.style.webkitLineClamp = "unset";
+                    this.style.display = "none";
+                });
+            }
+
+            // objects init
+            const modal = document.getElementById("filtermodal");
+            const backdrop = document.getElementById("backdrop");
+            const closeBtn = document.getElementById("closeBtn");
+            const subscribeButton = document.querySelector(".subscribe-button");
+
+            // Confetti function
+            function showConfetti() {
+                confetti({
+                    particleCount: 700,
+                    spread: 100,
+                    origin: { y: 0.6 },
+                });
+            }
+
+            // Open Modal
+            function openModal() {
+                modal.style.display = "block";
+                backdrop.style.display = "block";
+                setTimeout(() => {
+                    modal.classList.add("open");
+                }, 10);
+            }
+
+            // Close Modal
+            function closeModal() {
+                modal.classList.remove("open");
+                backdrop.style.display = "none";
+                setTimeout(() => {
+                    modal.style.display = "none";
+                }, 300);
+            }
+
+            if (subscribeButton) {
+                subscribeButton.addEventListener("click", function () {
+                    const isSubscribed = this.classList.toggle("subscribed");
+                    const text = this.querySelector("span");
+
+                    if (isSubscribed) {
+                        text.textContent = "Subscribed";
+                        // Show confetti animation
+                        showConfetti();
+                    } else {
+                        text.textContent = "Subscribe";
+                    }
+
+                    // Add button press effect
+                    this.classList.add("animate__animated", "animate__pulse");
+                    setTimeout(() => {
+                        this.classList.remove("animate__animated", "animate__pulse");
+                    }, 300);
+                });
+            }
+
+            closeBtn.addEventListener("click", closeModal);
+            backdrop.addEventListener("click", closeModal);
+            document.addEventListener("keydown", function (e) {
+                if (e.key === "Escape") closeModal();
+            });
+
+            const showfilters = document.querySelector(".showfilters");
+            showfilters.addEventListener("click", () => {
+                openModal();
+            });
+
+        });
+    </script>
+
+    <!-- Confetti Canvas (hidden) -->
+    <canvas id="confetti-canvas"
+        style="position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:999;"></canvas>
+    <script src="assets/js/navigation.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</body>
+
+</html>

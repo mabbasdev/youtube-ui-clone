@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zem TV YouTube Channel | YouTube Clone</title>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+  <link rel="stylesheet" href="assets/css/channel.css" />
+</head>
+
+<body class="sidebar-hidden">
+  <div class="container">
+    <header>
+      <nav class="navbar">
+        <div class="nav-section nav-left">
+          <button class="nav-button menu-button">
+            <i class="uil uil-bars"></i>
+          </button>
+          <a href="index.html" class="nav-logo">
+            <img src="images/logo.svg" alt="Logo" class="logo-image" />
+            <h2 class="logo-text">YouTube</h2>
+          </a>
+        </div>
+
+        <div class="nav-section">
+          <button class="nav-button search-back-button" id="search-back-button">
+            <i class="uil uil-arrow-left"></i>
+          </button>
+        </div>
+
+        <div class="nav-section nav-center">
+          <form action="#" class="search-form">
+            <input type="search" placeholder="Search" class="search-input" required />
+            <button class="nav-button search-button">
+              <i class="uil uil-search"></i>
+            </button>
+          </form>
+          <button class="nav-button mic-button">
+            <i class="uil uil-microphone"></i>
+          </button>
+        </div>
+
+        <div class="nav-section nav-right">
+          <button class="nav-button search-button" id="search-button">
+            <i class="uil uil-search"></i>
+          </button>
+          <button class="nav-button theme-button">
+            <i class="uil uil-moon"></i>
+          </button>
+          <img src="images/user.jpg" alt="User Image" class="user-image" />
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Layout -->
+    <main class="main-layout">
+      <div class="screen-overlay"></div>
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="nav-section nav-left">
+          <button class="nav-button menu-button">
+            <i class="uil uil-bars"></i>
+          </button>
+          <a href="index.html" class="nav-logo">
+            <img src="images/logo.svg" alt="Logo" class="logo-image" />
+            <h2 class="logo-text">YouTube</h2>
+          </a>
+        </div>
+
+        <div class="links-container">
+          <div class="link-section">
+            <a href="index.html" class="link-item"> <i class="uil uil-estate"></i> Home </a>
+            <a href="#" class="link-item"> <i class="uil uil-video"></i> Shorts </a>
+            <a href="#" class="link-item"> <i class="uil uil-tv-retro"></i> Subscriptions </a>
+          </div>
+          <div class="section-separator"></div>
+
+          <div class="link-section">
+            <h4 class="section-title">You</h4>
+            <a href="#" class="link-item"> <i class="uil uil-user-square"></i> Your channel </a>
+            <a href="#" class="link-item"> <i class="uil uil-history"></i> History </a>
+            <a href="#" class="link-item"> <i class="uil uil-clock"></i> Watch later </a>
+          </div>
+          <div class="section-separator"></div>
+
+          <div class="link-section">
+            <h4 class="section-title">Explore</h4>
+            <a href="#" class="link-item"> <i class="uil uil-fire"></i> Trending </a>
+            <a href="#" class="link-item"> <i class="uil uil-music"></i> Music </a>
+            <a href="#" class="link-item"> <i class="uil uil-basketball"></i> Gaming </a>
+            <a href="#" class="link-item"> <i class="uil uil-trophy"></i> Sports </a>
+          </div>
+          <div class="section-separator"></div>
+
+          <div class="link-section">
+            <h4 class="section-title">More from YouTube</h4>
+            <a href="#" class="link-item"> <i class="uil uil-shield-plus"></i> YouTube Plus </a>
+            <a href="#" class="link-item"> <i class="uil uil-headphones-alt"></i> YouTube Music </a>
+            <a href="#" class="link-item"> <i class="uil uil-airplay"></i> YouTube Kids </a>
+          </div>
+          <div class="section-separator"></div>
+
+          <div class="link-section">
+            <a href="#" class="link-item"> <i class="uil uil-setting"></i> Settings </a>
+            <a href="#" class="link-item"> <i class="uil uil-file-medical-alt"></i> Report </a>
+            <a href="#" class="link-item"> <i class="uil uil-question-circle"></i> Help </a>
+            <a href="#" class="link-item"> <i class="uil uil-exclamation-triangle"></i> Feedback </a>
+          </div>
+        </div>
+      </aside>
+
+      <div class="content-wrapper channel-wrapper">
+        <!-- Channel Banner -->
+        <div class="channel-banner">
+          <img src="images/banner.jpg" alt="Channel Banner" class="banner-image">
+        </div>
+
+        <!-- Channel Header -->
+        <div class="channel-header">
+          <div class="channel-info">
+            <div class="channel-avatar-container">
+              <img src="images/logo.jpg" alt="MrBeast" class="channel-avatar">
+              <div class="verified-badge">
+                <i class="uil uil-check"></i>
+              </div>
+            </div>
+            <div class="channel-details">
+              <div class="channel-title-container">
+                <h1 class="channel-title">Zem TV</h1>
+              </div>
+              <p class="channel-handle">@zemtv • 5.2M subscribers • 873 videos</p>
+              <p class="channel-description">
+                <span class="description-text truncate">This is the official youtube channel of Zem TV. This Channel
+                  includes Interesting facts and figures about the most interesting individuals on earth. Whether you
+                  want to know about the lifestyle of millionaires around the world, Most Expensive Things around the
+                  world, or mind-boggling scientific facts. This channel has it all. It's one-stop for entertainment and
+                  learning at the same time.</span>
+              </p>
+            </div>
+            <div class="channel-actions">
+              <button class="subscribe-button ">
+                <span>Subscribe</span>
+              </button>
+              <div class="video-options">
+                <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                <ul class="options-menu">
+                  <li><i class="uil uil-clock"></i> All</li>
+                  <li><i class="uil uil-bookmark"></i> Personalized</li>
+                  <li><i class="uil uil-folder-plus"></i> None</li>
+                  <li><i class="uil uil-share-alt"></i> Share</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="backdrop" id="backdrop"></div>
+
+        <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+          <div class="modal-header">
+            <div>
+              <h2 id="modalTitle">JavaScript Mastery</h2>
+            </div>
+            <button class="close-btn" id="closeBtn" aria-label="Close modal">&times;</button>
+          </div>
+          <div class="modal-content">
+
+            <div class="modal-section">
+              <h3>Description</h3>
+              <p>This is the official youtube channel of Zem TV. This Channel includes Interesting facts and figures
+                about the most interesting individuals on earth. Whether you want to know about the lifestyle of
+                millionaires around the world, Most Expensive Things around the world, or mind-boggling scientific
+                facts. This channel has it all. It's one-stop for entertainment and learning at the same time.</p>
+            </div>
+            <div class="modal-section">
+              <h3>Links</h3>
+              <a href="https://jsmastery.pro" target="_blank">jsmastery.pro</a>
+            </div>
+
+            <div class="modal-section">
+              <h3>More Info</h3>
+              <ul class="stats-list">
+                <li>📧 Email: <em>Sign in to view</em></li>
+                <li>🌐 <a href="https://youtube.com/@javascriptmastery" target="_blank">@javascriptmastery</a></li>
+                <li>📍 Croatia</li>
+                <li>📅 Joined: Dec 25, 2018</li>
+                <li>👥 1.1M subscribers</li>
+                <li>🎥 172 videos</li>
+                <li>👁️ 86,509,035 views</li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-buttons">
+            <button class="share-btn">Share Channel</button>
+            <button class="report-btn">Report Channel</button>
+          </div>
+        </div>
+
+
+        <!-- Channel Navigation -->
+        <div class="channel-navigation">
+          <nav class="channel-tabs" id="channelTabs">
+            <a href="#" class="channel-tab">Home</a>
+            <a href="#" class="channel-tab">Videos</a>
+            <a href="#" class="channel-tab">Shorts</a>
+            <a href="#" class="channel-tab">Playlists</a>
+            <a href="#" class="channel-tab">Posts</a>
+            <div class="tab-indicator" id="tabIndicator"></div>
+          </nav>
+        </div>
+
+        <div class="channel-content">
+          <div class="tab-panel" id="home-tab">
+
+            <!-- Featured Section -->
+            <div class="featured-section">
+              <div class="section-header">
+                <h2 class="section-title">Featured</h2>
+              </div>
+              <div class="featured-video">
+                <div class="featured-thumbnail">
+                  <img src="https://i.ytimg.com/vi/46wsE75SiFI/maxresdefault.jpg" alt="Featured Video">
+                  <div class="duration">12:34</div>
+                  <div class="progress-bar"></div>
+                </div>
+                <div class="featured-info">
+                  <div class="video-options-bar">
+                    <h3 class="featured-title">2000 Years Old City Found Hidden in the Desert</h3>
+                    <div class="video-options">
+                      <button class="options-toggle">
+                        <i class="uil uil-ellipsis-v"></i>
+                      </button>
+                      <ul class="options-menu">
+                        <li><i class="uil uil-clock"></i> Add to queue</li>
+                        <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                        <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                        <li><i class="uil uil-import"></i> Download</li>
+                        <li><i class="uil uil-share-alt"></i> Share</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <p class="featured-stats">368K views • 1 day ago</p>
+                  <p class="featured-description truncate-2">These videos are for educational purposes. All images and
+                    video footage used
+                    is credited within the video but copyright remains with the original owners. Copyright Disclaimer
+                    under
+                    section 107 of the Copyright Act of 1976, allowance is made for “fair use” for purposes such as
+                    criticism, comment, news reporting, teaching, scholarship, education and research. Fair use is a use
+                    permitted by copyright statute that might otherwise be infringing.Copyright Disclaimer under
+                    section 107 of the Copyright Act of 1976, allowance is made for “fair use” for purposes such as
+                    criticism, comment, news reporting, teaching, scholarship, education and research. Fair use is a use
+                    permitted by copyright statute that might otherwise be infringing.</p>
+
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Videos Section -->
+            <div class="section-header">
+              <h2 class="section-title">Popular Videos</h2>
+              <a href="#videos" class="view-all">View all</a>
+            </div>
+            <div class="videos-grid">
+
+              <div class="video-card">
+                <div class="video-thumbnail">
+                  <img src="https://i.ytimg.com/vi/BI2QfuAhrCk/maxresdefault.jpg" alt="Beat Neymar, Win $500,000">
+                  <div class="duration">13:23</div>
+                  <div class="progress-bar"></div>
+                </div>
+                <div class="video-info">
+                  <div class="info-header">
+                    <div class="text-info">
+                      <h3 class="video-title">Why Qatar Treated Trump Like a KING + $400M Gift</h3>
+                      <p class="video-stats">58M views • 1 day ago</p>
+                    </div>
+                    <div class="video-options">
+                      <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                      <ul class="options-menu">
+                        <li><i class="uil uil-clock"></i> Add to queue</li>
+                        <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                        <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                        <li><i class="uil uil-import"></i> Download</li>
+                        <li><i class="uil uil-share-alt"></i> Share</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="video-card">
+                <div class="video-thumbnail">
+                  <img src="https://i.ytimg.com/vi/HFGdv8hIRnQ/maxresdefault.jpg"
+                    alt="I Explored 2000 Year Old Ancient Temples">
+                  <div class="duration">18:36</div>
+                  <div class="progress-bar"></div>
+                </div>
+                <div class="video-info">
+                  <div class="info-header">
+                    <div class="text-info">
+                      <h3 class="video-title">Why Even Russia & China Fear This Jet</h3>
+                      <p class="video-stats">78M views • 2 weeks ago</p>
+                    </div>
+                    <div class="video-options">
+                      <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                      <ul class="options-menu">
+                        <li><i class="uil uil-clock"></i> Add to queue</li>
+                        <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                        <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                        <li><i class="uil uil-import"></i> Download</li>
+                        <li><i class="uil uil-share-alt"></i> Share</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="video-card">
+                <div class="video-thumbnail">
+                  <img src="https://i.ytimg.com/vi/SBhCHPnWkpI/maxresdefault.jpg"
+                    alt="Would You Risk Drowning for $500,000?">
+                  <div class="duration">21:43</div>
+                  <div class="progress-bar"></div>
+                </div>
+                <div class="video-info">
+                  <div class="info-header">
+                    <div class="text-info">
+                      <h3 class="video-title">They Said Einstein Was ‘Useless’... Until THIS Happened</h3>
+                      <p class="video-stats">128M views • 4 weeks ago</p>
+                    </div>
+                    <div class="video-options">
+                      <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                      <ul class="options-menu">
+                        <li><i class="uil uil-clock"></i> Add to queue</li>
+                        <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                        <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                        <li><i class="uil uil-import"></i> Download</li>
+                        <li><i class="uil uil-share-alt"></i> Share</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="video-card">
+                <div class="video-thumbnail">
+                  <img src="https://i.ytimg.com/vi/gLDcNX_TmWQ/maxresdefault.jpg"
+                    alt="Watch This Video To Feed 1 Person in Need">
+                  <div class="duration">10:15</div>
+                  <div class="progress-bar"></div>
+                </div>
+                <div class="video-info">
+                  <div class="info-header">
+                    <div class="text-info">
+                      <h3 class="video-title">One Thing on Mars Even NASA Fears!</h3>
+                      <p class="video-stats">59M views • 1 month ago</p>
+                    </div>
+                    <div class="video-options">
+                      <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                      <ul class="options-menu">
+                        <li><i class="uil uil-clock"></i> Add to queue</li>
+                        <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                        <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                        <li><i class="uil uil-import"></i> Download</li>
+                        <li><i class="uil uil-share-alt"></i> Share</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="video-card">
+                <div class="video-thumbnail">
+                  <img src="https://i.ytimg.com/vi/46wsE75SiFI/maxresdefault.jpg" alt="DAY 1">
+                  <div class="duration">13:23</div>
+                  <div class="progress-bar"></div>
+                </div>
+                <div class="video-info">
+                  <div class="info-header">
+                    <div class="text-info">
+                      <h3 class="video-title">2000 Years Old City Found Hidden in the Desert!</h3>
+                      <p class="video-stats">45M views • 1 month ago</p>
+                    </div>
+                    <div class="video-options">
+                      <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                      <ul class="options-menu">
+                        <li><i class="uil uil-clock"></i> Add to queue</li>
+                        <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                        <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                        <li><i class="uil uil-import"></i> Download</li>
+                        <li><i class="uil uil-share-alt"></i> Share</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="video-card">
+                <div class="video-thumbnail">
+                  <img src="https://i.ytimg.com/vi/7eAPaQ9ganU/maxresdefault.jpg" alt="DAY 30">
+                  <div class="duration">18:36</div>
+                  <div class="progress-bar"></div>
+                </div>
+                <div class="video-info">
+                  <div class="info-header">
+                    <div class="text-info">
+                      <h3 class="video-title">Who Built this Below the Pyramids?</h3>
+                      <p class="video-stats">52M views • 1 month ago</p>
+                    </div>
+                    <div class="video-options">
+                      <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                      <ul class="options-menu">
+                        <li><i class="uil uil-clock"></i> Add to queue</li>
+                        <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                        <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                        <li><i class="uil uil-import"></i> Download</li>
+                        <li><i class="uil uil-share-alt"></i> Share</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="video-card">
+                <div class="video-thumbnail">
+                  <img src="https://i.ytimg.com/vi/LsnduB1SvYc/maxresdefault.jpg"
+                    alt="I Survived The 5 Deadliest Places On Earth">
+                  <div class="duration">21:43</div>
+                  <div class="progress-bar"></div>
+                </div>
+                <div class="video-info">
+                  <div class="info-header">
+                    <div class="text-info">
+                      <h3 class="video-title">Hidden Formula Behind IKEA's Success!</h3>
+                      <p class="video-stats">119M views • 2 months ago</p>
+                    </div>
+                    <div class="video-options">
+                      <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                      <ul class="options-menu">
+                        <li><i class="uil uil-clock"></i> Add to queue</li>
+                        <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                        <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                        <li><i class="uil uil-import"></i> Download</li>
+                        <li><i class="uil uil-share-alt"></i> Share</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="video-card">
+                <div class="video-thumbnail">
+                  <img src="https://i.ytimg.com/vi/opy-WoBoG3Y/maxresdefault.jpg"
+                    alt="Last to Leave Their Circle Wins $500,000">
+                  <div class="duration">15:12</div>
+                  <div class="progress-bar"></div>
+                </div>
+                <div class="video-info">
+                  <div class="info-header">
+                    <div class="text-info">
+                      <h3 class="video-title">A Man Who Bent Metal With His Mind—LIVE on TV!</h3>
+                      <p class="video-stats">134M views • 2 months ago</p>
+                    </div>
+                    <div class="video-options">
+                      <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                      <ul class="options-menu">
+                        <li><i class="uil uil-clock"></i> Add to queue</li>
+                        <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                        <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                        <li><i class="uil uil-import"></i> Download</li>
+                        <li><i class="uil uil-share-alt"></i> Share</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Shorts Section -->
+            <div class="section-header">
+              <h2 class="section-title">Shorts</h2>
+              <a href="#" class="view-all">View all</a>
+            </div>
+            <div class="shorts-grid">
+              <div class="shorts-item">
+                <div class="shorts-thumbnail">
+                  <img src="https://i.ytimg.com/vi/QU7DlV83eYA/maxresdefault.jpg"
+                    alt="Island Mystery: Why Everyone Vanished Overnight!">
+                  <div class="shorts-icon">
+                    <i class="uil uil-youtube"></i>
+                  </div>
+                </div>
+                <div class="shorts-details">
+                  <h3 class="shorts-title">Island Mystery: Why Everyone Vanished Overnight!</h3>
+                  <p class="shorts-stats">17K views</p>
+                </div>
+              </div>
+
+              <div class="shorts-item">
+                <div class="shorts-thumbnail">
+                  <img src="https://i.ytimg.com/vi/7urNft-drf4/maxresdefault.jpg"
+                    alt="Responsive Image Slider in HTML CSS">
+                  <div class="shorts-icon">
+                    <i class="uil uil-youtube"></i>
+                  </div>
+                </div>
+                <div class="shorts-details">
+                  <h3 class="shorts-title">Tragic Mistake Over Lake Erie: The Skydiving Disaster</h3>
+                  <p class="shorts-stats">157K views</p>
+                </div>
+              </div>
+
+              <div class="shorts-item">
+                <div class="shorts-thumbnail">
+                  <img src="https://i.ytimg.com/vi/qhlS7vR2b44/maxresdefault.jpg"
+                    alt="Flipping Card UI Design in HTML &amp; CSS">
+                  <div class="shorts-icon">
+                    <i class="uil uil-youtube"></i>
+                  </div>
+                </div>
+                <div class="shorts-details">
+                  <h3 class="shorts-title">What Happened to this Foreigner in North Korea?</h3>
+                  <p class="shorts-stats">85K views</p>
+                </div>
+              </div>
+
+              <div class="shorts-item">
+                <div class="shorts-thumbnail">
+                  <img src="https://i.ytimg.com/vi/X_Xblks3xkc/maxresdefault.jpg"
+                    alt="Multiple File Uploading using JavaScript">
+                  <div class="shorts-icon">
+                    <i class="uil uil-youtube"></i>
+                  </div>
+                </div>
+                <div class="shorts-details">
+                  <h3 class="shorts-title">Why Tornadoes Love This Place!</h3>
+                  <p class="shorts-stats">7.4K views</p>
+                </div>
+              </div>
+
+              <div class="shorts-item">
+                <div class="shorts-thumbnail">
+                  <img src="https://i.ytimg.com/vi/c3Z1vKQxkwk/maxresdefault.jpg" alt="Build A Responsive Calculator">
+                  <div class="shorts-icon">
+                    <i class="uil uil-youtube"></i>
+                  </div>
+                </div>
+                <div class="shorts-details">
+                  <h3 class="shorts-title">Unusual Crack in Antarctica Ice Shelf</h3>
+                  <p class="shorts-stats">30K views</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Playlists Section -->
+            <div class="section-header">
+              <h2 class="section-title">Popular Playlists</h2>
+              <a href="#" class="view-all">View all</a>
+            </div>
+            <div class="playlists-grid">
+              <div class="playlist-card">
+                <div class="playlist-thumbnail">
+                  <img src="https://i.ytimg.com/vi/BI2QfuAhrCk/hqdefault.jpg" alt="Playlist 1">
+                  <div class="overlay">
+                    <i class="uil uil-play"></i>
+                    <span class="count">10 videos</span>
+                  </div>
+                </div>
+                <div class="playlist-info">
+                  <div class="info-header">
+                    <div class="text-info">
+                      <h3 class="playlist-title">World’s Billionaire Secrets</h3>
+                      <a href="playlist.html" class="view-playlist">View Playlist</a>
+                    </div>
+                    <div class="video-options">
+                      <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                      <ul class="options-menu">
+                        <li><i class="uil uil-clock"></i> Add to queue</li>
+                        <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                        <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                        <li><i class="uil uil-import"></i> Download</li>
+                        <li><i class="uil uil-share-alt"></i> Share</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="playlist-card">
+                <div class="playlist-thumbnail">
+                  <img src="https://i.ytimg.com/vi/HFGdv8hIRnQ/hqdefault.jpg" alt="Playlist 2">
+                  <div class="overlay">
+                    <i class="uil uil-play"></i>
+                    <span class="count">8 videos</span>
+                  </div>
+                </div>
+                <div class="playlist-info">
+                  <div class="info-header">
+                    <div class="text-info">
+                      <h3 class="playlist-title">Ancient Civilizations Exposed</h3>
+                      <a href="playlist.html" class="view-playlist">View Playlist</a>
+                    </div>
+                    <div class="video-options">
+                      <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                      <ul class="options-menu">
+                        <li><i class="uil uil-clock"></i> Add to queue</li>
+                        <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                        <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                        <li><i class="uil uil-import"></i> Download</li>
+                        <li><i class="uil uil-share-alt"></i> Share</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="playlist-card">
+                <div class="playlist-thumbnail">
+                  <img src="https://i.ytimg.com/vi/SBhCHPnWkpI/hqdefault.jpg" alt="Playlist 3">
+                  <div class="overlay">
+                    <i class="uil uil-play"></i>
+                    <span class="count">15 videos</span>
+                  </div>
+                </div>
+                <div class="playlist-info">
+                  <div class="info-header">
+                    <div class="text-info">
+                      <h3 class="playlist-title">Science And Wonders</h3>
+                      <a href="playlist.html" class="view-playlist">View Playlist</a>
+                    </div>
+                    <div class="video-options">
+                      <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                      <ul class="options-menu">
+                        <li><i class="uil uil-clock"></i> Add to queue</li>
+                        <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                        <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                        <li><i class="uil uil-import"></i> Download</li>
+                        <li><i class="uil uil-share-alt"></i> Share</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="playlist-card">
+                <div class="playlist-thumbnail">
+                  <img src="https://i.ytimg.com/vi/7eAPaQ9ganU/hqdefault.jpg" alt="Playlist 4">
+                  <div class="overlay">
+                    <i class="uil uil-play"></i>
+                    <span class="count">12 videos</span>
+                  </div>
+                </div>
+                <div class="playlist-info">
+                  <div class="info-header">
+                    <div class="text-info">
+                      <h3 class="playlist-title">Mystery & Theories</h3>
+                      <a href="playlist.html" class="view-playlist">View Playlist</a>
+                    </div>
+                    <div class="video-options">
+                      <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                      <ul class="options-menu">
+                        <li><i class="uil uil-clock"></i> Add to queue</li>
+                        <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                        <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                        <li><i class="uil uil-import"></i> Download</li>
+                        <li><i class="uil uil-share-alt"></i> Share</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Featured Channels Section -->
+            <div class="section-header">
+              <h2 class="section-title">Featured Channels</h2>
+            </div>
+            <div class="featured-channels-grid-vertical">
+              <div class="channel-card-vertical">
+                <div class="channel-logo">
+                  <img src="images/logo.png" alt="Veritasium">
+                </div>
+                <h3 class="channel-name">
+                  Veritasium
+                  <span class="verified"><i class="uil uil-check-circle"></i></span>
+                </h3>
+                <p class="channel-handle">@veritasium</p>
+                <button class="subscribe-btn">Subscribe</button>
+              </div>
+
+              <div class="channel-card-vertical">
+                <div class="channel-logo">
+                  <img src="images/logo.png" alt="Kurzgesagt">
+                </div>
+                <h3 class="channel-name">
+                  Kurzgesagt
+                  <span class="verified"><i class="uil uil-check-circle"></i></span>
+                </h3>
+                <p class="channel-handle">@kurzgesagt</p>
+                <button class="subscribe-btn">Subscribe</button>
+              </div>
+
+              <div class="channel-card-vertical">
+                <div class="channel-logo">
+                  <img src="images/logo.png" alt="Mark Rober">
+                </div>
+                <h3 class="channel-name">Mark Rober</h3>
+                <p class="channel-handle">@markrober</p>
+                <button class="subscribe-btn">Subscribe</button>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="tab-panel" id="videos-tab">
+            <div class="section-header">
+              <h2 class="section-title">Popular Videos</h2>
+              <a href="#" class="view-all">View all</a>
+            </div>
+            <div class="videos-grid">
+
+              <div class="video-card">
+                <div class="video-thumbnail">
+                  <img src="https://i.ytimg.com/vi/BI2QfuAhrCk/maxresdefault.jpg" alt="Beat Neymar, Win $500,000">
+                  <div class="duration">13:23</div>
+                  <div class="progress-bar"></div>
+                </div>
+                <div class="video-info">
+                  <div class="info-header">
+                    <div class="text-info">
+                      <h3 class="video-title">Why Qatar Treated Trump Like a KING + $400M Gift</h3>
+                      <p class="video-stats">58M views • 1 day ago</p>
+                    </div>
+                    <div class="video-options">
+                      <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                      <ul class="options-menu">
+                        <li><i class="uil uil-clock"></i> Add to queue</li>
+                        <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                        <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                        <li><i class="uil uil-import"></i> Download</li>
+                        <li><i class="uil uil-share-alt"></i> Share</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="video-card">
+                <div class="video-thumbnail">
+                  <img src="https://i.ytimg.com/vi/HFGdv8hIRnQ/maxresdefault.jpg"
+                    alt="I Explored 2000 Year Old Ancient Temples">
+                  <div class="duration">18:36</div>
+                  <div class="progress-bar"></div>
+                </div>
+                <div class="video-info">
+                  <div class="info-header">
+                    <div class="text-info">
+                      <h3 class="video-title">Why Even Russia & China Fear This Jet</h3>
+                      <p class="video-stats">78M views • 2 weeks ago</p>
+                    </div>
+                    <div class="video-options">
+                      <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                      <ul class="options-menu">
+                        <li><i class="uil uil-clock"></i> Add to queue</li>
+                        <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                        <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                        <li><i class="uil uil-import"></i> Download</li>
+                        <li><i class="uil uil-share-alt"></i> Share</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="video-card">
+                <div class="video-thumbnail">
+                  <img src="https://i.ytimg.com/vi/SBhCHPnWkpI/maxresdefault.jpg"
+                    alt="Would You Risk Drowning for $500,000?">
+                  <div class="duration">21:43</div>
+                  <div class="progress-bar"></div>
+                </div>
+                <div class="video-info">
+                  <div class="info-header">
+                    <div class="text-info">
+                      <h3 class="video-title">They Said Einstein Was ‘Useless’... Until THIS Happened</h3>
+                      <p class="video-stats">128M views • 4 weeks ago</p>
+                    </div>
+                    <div class="video-options">
+                      <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                      <ul class="options-menu">
+                        <li><i class="uil uil-clock"></i> Add to queue</li>
+                        <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                        <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                        <li><i class="uil uil-import"></i> Download</li>
+                        <li><i class="uil uil-share-alt"></i> Share</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="video-card">
+                <div class="video-thumbnail">
+                  <img src="https://i.ytimg.com/vi/gLDcNX_TmWQ/maxresdefault.jpg"
+                    alt="Watch This Video To Feed 1 Person in Need">
+                  <div class="duration">10:15</div>
+                  <div class="progress-bar"></div>
+                </div>
+                <div class="video-info">
+                  <div class="info-header">
+                    <div class="text-info">
+                      <h3 class="video-title">One Thing on Mars Even NASA Fears!</h3>
+                      <p class="video-stats">59M views • 1 month ago</p>
+                    </div>
+                    <div class="video-options">
+                      <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                      <ul class="options-menu">
+                        <li><i class="uil uil-clock"></i> Add to queue</li>
+                        <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                        <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                        <li><i class="uil uil-import"></i> Download</li>
+                        <li><i class="uil uil-share-alt"></i> Share</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="video-card">
+                <div class="video-thumbnail">
+                  <img src="https://i.ytimg.com/vi/46wsE75SiFI/maxresdefault.jpg" alt="DAY 1">
+                  <div class="duration">13:23</div>
+                  <div class="progress-bar"></div>
+                </div>
+                <div class="video-info">
+                  <div class="info-header">
+                    <div class="text-info">
+                      <h3 class="video-title">2000 Years Old City Found Hidden in the Desert!</h3>
+                      <p class="video-stats">45M views • 1 month ago</p>
+                    </div>
+                    <div class="video-options">
+                      <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                      <ul class="options-menu">
+                        <li><i class="uil uil-clock"></i> Add to queue</li>
+                        <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                        <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                        <li><i class="uil uil-import"></i> Download</li>
+                        <li><i class="uil uil-share-alt"></i> Share</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="video-card">
+                <div class="video-thumbnail">
+                  <img src="https://i.ytimg.com/vi/7eAPaQ9ganU/maxresdefault.jpg" alt="DAY 30">
+                  <div class="duration">18:36</div>
+                  <div class="progress-bar"></div>
+                </div>
+                <div class="video-info">
+                  <div class="info-header">
+                    <div class="text-info">
+                      <h3 class="video-title">Who Built this Below the Pyramids?</h3>
+                      <p class="video-stats">52M views • 1 month ago</p>
+                    </div>
+                    <div class="video-options">
+                      <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                      <ul class="options-menu">
+                        <li><i class="uil uil-clock"></i> Add to queue</li>
+                        <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                        <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                        <li><i class="uil uil-import"></i> Download</li>
+                        <li><i class="uil uil-share-alt"></i> Share</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="video-card">
+                <div class="video-thumbnail">
+                  <img src="https://i.ytimg.com/vi/LsnduB1SvYc/maxresdefault.jpg"
+                    alt="I Survived The 5 Deadliest Places On Earth">
+                  <div class="duration">21:43</div>
+                  <div class="progress-bar"></div>
+                </div>
+                <div class="video-info">
+                  <div class="info-header">
+                    <div class="text-info">
+                      <h3 class="video-title">Hidden Formula Behind IKEA's Success!</h3>
+                      <p class="video-stats">119M views • 2 months ago</p>
+                    </div>
+                    <div class="video-options">
+                      <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                      <ul class="options-menu">
+                        <li><i class="uil uil-clock"></i> Add to queue</li>
+                        <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                        <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                        <li><i class="uil uil-import"></i> Download</li>
+                        <li><i class="uil uil-share-alt"></i> Share</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="video-card">
+                <div class="video-thumbnail">
+                  <img src="https://i.ytimg.com/vi/opy-WoBoG3Y/maxresdefault.jpg"
+                    alt="Last to Leave Their Circle Wins $500,000">
+                  <div class="duration">15:12</div>
+                  <div class="progress-bar"></div>
+                </div>
+                <div class="video-info">
+                  <div class="info-header">
+                    <div class="text-info">
+                      <h3 class="video-title">A Man Who Bent Metal With His Mind—LIVE on TV!</h3>
+                      <p class="video-stats">134M views • 2 months ago</p>
+                    </div>
+                    <div class="video-options">
+                      <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                      <ul class="options-menu">
+                        <li><i class="uil uil-clock"></i> Add to queue</li>
+                        <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                        <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                        <li><i class="uil uil-import"></i> Download</li>
+                        <li><i class="uil uil-share-alt"></i> Share</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="tab-panel" id="shorts-tab">
+            <div class="section-header">
+              <h2 class="section-title">Shorts</h2>
+              <a href="#" class="view-all">View all</a>
+            </div>
+            <div class="shorts-grid">
+              <div class="shorts-item">
+                <div class="shorts-thumbnail">
+                  <img src="https://i.ytimg.com/vi/QU7DlV83eYA/maxresdefault.jpg"
+                    alt="Island Mystery: Why Everyone Vanished Overnight!">
+                  <div class="shorts-icon">
+                    <i class="uil uil-youtube"></i>
+                  </div>
+                </div>
+                <div class="shorts-details">
+                  <h3 class="shorts-title">Island Mystery: Why Everyone Vanished Overnight!</h3>
+                  <p class="shorts-stats">17K views</p>
+                </div>
+              </div>
+
+              <div class="shorts-item">
+                <div class="shorts-thumbnail">
+                  <img src="https://i.ytimg.com/vi/7urNft-drf4/maxresdefault.jpg"
+                    alt="Responsive Image Slider in HTML CSS">
+                  <div class="shorts-icon">
+                    <i class="uil uil-youtube"></i>
+                  </div>
+                </div>
+                <div class="shorts-details">
+                  <h3 class="shorts-title">Tragic Mistake Over Lake Erie: The Skydiving Disaster</h3>
+                  <p class="shorts-stats">157K views</p>
+                </div>
+              </div>
+
+              <div class="shorts-item">
+                <div class="shorts-thumbnail">
+                  <img src="https://i.ytimg.com/vi/qhlS7vR2b44/maxresdefault.jpg"
+                    alt="Flipping Card UI Design in HTML &amp; CSS">
+                  <div class="shorts-icon">
+                    <i class="uil uil-youtube"></i>
+                  </div>
+                </div>
+                <div class="shorts-details">
+                  <h3 class="shorts-title">What Happened to this Foreigner in North Korea?</h3>
+                  <p class="shorts-stats">85K views</p>
+                </div>
+              </div>
+
+              <div class="shorts-item">
+                <div class="shorts-thumbnail">
+                  <img src="https://i.ytimg.com/vi/X_Xblks3xkc/maxresdefault.jpg"
+                    alt="Multiple File Uploading using JavaScript">
+                  <div class="shorts-icon">
+                    <i class="uil uil-youtube"></i>
+                  </div>
+                </div>
+                <div class="shorts-details">
+                  <h3 class="shorts-title">Why Tornadoes Love This Place!</h3>
+                  <p class="shorts-stats">7.4K views</p>
+                </div>
+              </div>
+
+              <div class="shorts-item">
+                <div class="shorts-thumbnail">
+                  <img src="https://i.ytimg.com/vi/c3Z1vKQxkwk/maxresdefault.jpg" alt="Build A Responsive Calculator">
+                  <div class="shorts-icon">
+                    <i class="uil uil-youtube"></i>
+                  </div>
+                </div>
+                <div class="shorts-details">
+                  <h3 class="shorts-title">Unusual Crack in Antarctica Ice Shelf</h3>
+                  <p class="shorts-stats">30K views</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="playlists-tab">
+            <div class="section-header">
+              <h2 class="section-title">Popular Playlists</h2>
+              <a href="#" class="view-all">View all</a>
+            </div>
+            <div class="playlists-grid">
+              <div class="playlist-card">
+                <div class="playlist-thumbnail">
+                  <img src="https://i.ytimg.com/vi/BI2QfuAhrCk/hqdefault.jpg" alt="Playlist 1">
+                  <div class="overlay">
+                    <i class="uil uil-play"></i>
+                    <span class="count">10 videos</span>
+                  </div>
+                </div>
+                <div class="playlist-info">
+                  <div class="info-header">
+                    <div class="text-info">
+                      <h3 class="playlist-title">World’s Billionaire Secrets</h3>
+                      <a href="playlist.html" class="view-playlist">View Playlist</a>
+                    </div>
+                    <div class="video-options">
+                      <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                      <ul class="options-menu">
+                        <li><i class="uil uil-clock"></i> Add to queue</li>
+                        <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                        <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                        <li><i class="uil uil-import"></i> Download</li>
+                        <li><i class="uil uil-share-alt"></i> Share</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="playlist-card">
+                <div class="playlist-thumbnail">
+                  <img src="https://i.ytimg.com/vi/HFGdv8hIRnQ/hqdefault.jpg" alt="Playlist 2">
+                  <div class="overlay">
+                    <i class="uil uil-play"></i>
+                    <span class="count">8 videos</span>
+                  </div>
+                </div>
+                <div class="playlist-info">
+                  <div class="info-header">
+                    <div class="text-info">
+                      <h3 class="playlist-title">Ancient Civilizations Exposed</h3>
+                      <a href="playlist.html" class="view-playlist">View Playlist</a>
+                    </div>
+                    <div class="video-options">
+                      <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                      <ul class="options-menu">
+                        <li><i class="uil uil-clock"></i> Add to queue</li>
+                        <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                        <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                        <li><i class="uil uil-import"></i> Download</li>
+                        <li><i class="uil uil-share-alt"></i> Share</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="playlist-card">
+                <div class="playlist-thumbnail">
+                  <img src="https://i.ytimg.com/vi/SBhCHPnWkpI/hqdefault.jpg" alt="Playlist 3">
+                  <div class="overlay">
+                    <i class="uil uil-play"></i>
+                    <span class="count">15 videos</span>
+                  </div>
+                </div>
+                <div class="playlist-info">
+                  <div class="info-header">
+                    <div class="text-info">
+                      <h3 class="playlist-title">Science And Wonders</h3>
+                      <a href="playlist.html" class="view-playlist">View Playlist</a>
+                    </div>
+                    <div class="video-options">
+                      <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                      <ul class="options-menu">
+                        <li><i class="uil uil-clock"></i> Add to queue</li>
+                        <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                        <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                        <li><i class="uil uil-import"></i> Download</li>
+                        <li><i class="uil uil-share-alt"></i> Share</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="playlist-card">
+                <div class="playlist-thumbnail">
+                  <img src="https://i.ytimg.com/vi/7eAPaQ9ganU/hqdefault.jpg" alt="Playlist 4">
+                  <div class="overlay">
+                    <i class="uil uil-play"></i>
+                    <span class="count">12 videos</span>
+                  </div>
+                </div>
+                <div class="playlist-info">
+                  <div class="info-header">
+                    <div class="text-info">
+                      <h3 class="playlist-title">Mystery & Theories</h3>
+                      <a href="playlist.html" class="view-playlist">View Playlist</a>
+                    </div>
+                    <div class="video-options">
+                      <button class="options-toggle"><i class="uil uil-ellipsis-v"></i></button>
+                      <ul class="options-menu">
+                        <li><i class="uil uil-clock"></i> Add to queue</li>
+                        <li><i class="uil uil-bookmark"></i> Save to Watch Later</li>
+                        <li><i class="uil uil-folder-plus"></i> Save to a Playlist</li>
+                        <li><i class="uil uil-import"></i> Download</li>
+                        <li><i class="uil uil-share-alt"></i> Share</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="posts-tab">
+            <h2 style="color: var(--black-color);">I'll Develop this later. 😉</h2>
+          </div>
+
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- Confetti Canvas (hidden) -->
+  <canvas id="confetti-canvas"
+    style="position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:999;"></canvas>
+
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/channel.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</body>
+
+</html>

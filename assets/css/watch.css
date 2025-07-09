@@ -1,0 +1,487 @@
+.watch-container {
+    display: flex;
+    gap: 24px;
+    padding-top: 24px;
+}
+
+.video-container {
+    flex: 2;
+}
+
+.related-videos {
+    flex: 1;
+    min-width: 350px;
+}
+
+.video-player {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    overflow: hidden;
+}
+
+.video-player iframe,
+.video-player video {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.video-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--black-color);
+    margin-bottom: 12px;
+    line-height: 1.5rem;
+}
+
+.video-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.video-stats {
+    color: var(--secondary-color);
+    font-size: 0.875rem;
+}
+
+.action-buttons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.action-button {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 18px;
+    cursor: pointer;
+    color: var(--black-color);
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: .3s ease-out;
+}
+
+.action-button:hover {
+    background: var(--light-gray-color);
+}
+
+.comment-button {
+    display: none;
+}
+
+.comment-action .uis,
+.action-button .uis {
+    display: none;
+}
+
+.action-button.active {
+    color: var(--black-color);
+}
+
+.action-button i {
+    font-size: 24px;
+}
+
+.action-button i.uis {
+    color: var(--black-color);
+}
+
+.channel-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    border-top: 1px solid var(--light-gray-color);
+    border-bottom: 1px solid var(--light-gray-color);
+    margin-bottom: 24px;
+}
+
+.channel-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.channel-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.channel-avatar-container {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--light-gray-color);
+}
+
+.verified-badge {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #065fd4;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+    border: 2px solid var(--white-color);
+}
+
+.dark-mode .verified-badge {
+    border-color: var(--dark-bg-color);
+}
+
+.channel-name {
+    font-weight: 600;
+    color: var(--black-color);
+    text-decoration: none;
+    line-height: 1.5rem;
+}
+
+.subscribers {
+    color: var(--secondary-color);
+    font-size: 0.875rem;
+}
+
+/* Subscribe Button */
+.subscribe-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #cc0000;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    height: 40px;
+    transition: transform 0.1s ease, background 0.2s ease;
+}
+
+.subscribe-button:hover {
+    background: #ff0000;
+}
+
+.subscribe-button:active {
+    transform: scale(0.95);
+}
+
+.subscribe-button.subscribed {
+    background: var(--light-gray-color);
+    color: var(--black-color);
+}
+
+.subscribe-button.subscribed:hover {
+    background: #e5e5e5;
+}
+
+/* Drop down */
+
+.video-options-bar {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.video-options {
+    position: relative;
+}
+
+.video-info .info-header {
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.video-description {
+    background: var(--light-white-color);
+    padding: 12px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.views-date {
+    font-weight: 600;
+    color: var(--black-color);
+    margin-bottom: 12px;
+}
+
+.description-text {
+    color: var(--black-color);
+    font-size: 0.875rem;
+    line-height: 1.6;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    max-height: 4.5em;
+    transition: max-height 0.3s ease;
+}
+
+.description-text.expanded {
+    -webkit-line-clamp: unset;
+    max-height: 1000px;
+}
+
+.show-more-btn {
+    background: none;
+    border: none;
+    color: var(--secondary-color);
+    font-weight: 500;
+    font-size: 0.875rem;
+    cursor: pointer;
+    padding: 4px 0;
+    margin-top: 4px;
+}
+
+.show-more-btn:hover {
+    color: var(--black-color);
+}
+
+.disclaimer-text {
+    font-size: 0.8125rem;
+    color: var(--secondary-color);
+    line-height: 1.5;
+    display: block;
+    margin-top: 12px;
+}
+
+.comments-header {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.comments-count {
+    font-weight: 600;
+    color: var(--black-color);
+}
+
+.sort-comments {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--secondary-color);
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+.add-comment {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.comment-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.comment-input {
+    flex: 1;
+    border: none;
+    border-bottom: 1px solid var(--light-gray-color);
+    padding-bottom: 8px;
+    color: var(--black-color);
+    background: transparent;
+    transition: .3s ease-in-out;
+}
+
+.comment-input:focus {
+    outline: none;
+    border-bottom-color: var(--black-color);
+}
+
+.comment {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.comment-content {
+    flex: 1;
+}
+
+.comment-author {
+    color: var(--black-color);
+    padding-bottom: 2px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.2rem;
+}
+
+.comment-author:not(.comment-author span):hover {
+    text-decoration: underline;
+}
+
+.comment-text {
+    color: var(--black-color);
+    margin-bottom: 8px;
+    line-height: 1.4;
+    font-size: 14px;
+}
+
+.comment-time {
+    font-size: 12px;
+    color: var(--overlay-dark-color);
+}
+
+.comment-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.comment-action {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+    color: var(--secondary-color);
+    font-size: 0.75rem;
+    cursor: pointer;
+}
+
+.comment-action.active {
+    color: var(--primary-color);
+}
+
+.comment-action i {
+    font-size: 16px;
+}
+
+.pinned-comment {
+    background: var(--light-white-color);
+    padding: 12px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+
+.pinned-label {
+    font-size: 0.75rem;
+    color: var(--secondary-color);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+/* Related Videos Styles */
+.related-videos .video-card {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin-bottom: 16px;
+    text-decoration: none;
+}
+
+.related-videos .thumbnail-container {
+    position: relative;
+    width: 168px;
+    flex-shrink: 0;
+}
+
+.related-videos .thumbnail {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9;
+    background: var(--light-white-color);
+}
+
+.related-videos .duration {
+    position: absolute;
+    right: 4px;
+    bottom: 8px;
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 2px 4px;
+    border-radius: 4px;
+    background: var(--overlay-dark-color);
+}
+
+.related-videos .video-info {
+    flex: 1;
+    padding: 0;
+}
+
+.related-videos .title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--black-color);
+    margin-bottom: 4px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.related-videos .channel-name {
+    font-size: 0.75rem;
+    color: var(--secondary-color);
+    margin: 4px 0 2px;
+}
+
+.related-videos .views {
+    font-size: 0.75rem;
+    color: var(--secondary-color);
+}
+
+.related-videos .new-badge {
+    font-size: 0.75rem;
+    color: #cc0000;
+    margin-left: 4px;
+}
+
+.category-list {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 10px;
+}
+
+.category-button {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    margin-right: 10px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.category-button.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.category-list {
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    gap: 0 !important;
+    background: var(--white-color);
+    list-style: none;
+    scroll-behavior: smooth;
+}
